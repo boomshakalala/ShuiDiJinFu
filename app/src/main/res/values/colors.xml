@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_window">#f3f3f3</color>
+    <color name="bg_status_bar">#757575</color>
+    <color name="bg_title_bar">#ffffff</color>
+    <color name="text_color_title">#333333</color>
+    <color name="text_color_title_menu">#666666</color>
+    <color name="bg_title_spline">#e3e7ed</color>
+
+    <color name="gradient_start_color">#68A0FF</color>
+    <color name="gradient_end_color">#3754E7</color>
+    <color name="main_color">#3F51B5</color>
+    <color name="main_tab_text_focus">#3754E7</color>
+    <color name="main_tab_text_un_focus">#999999</color>
+
+    <color name="white">#ffffff</color>
+    <color name="translucent">#44000000</color>
+</resources>

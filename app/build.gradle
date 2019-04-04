@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    defaultConfig {
+        applicationId "tech.shuidikeji.shuidijinfu"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion COMPILE_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "default"
+    }
+    buildTypes {
+        debug{
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            shrinkResources false
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../key/shuidijinfu.jks")
+            storePassword 'shuidikeji123'
+            keyAlias 'shuidijinfu'
+            keyPassword 'shuidikeji123'
+        }
+        debug {
+            storeFile file("../key/shuidijinfu.jks")
+            storePassword 'shuidikeji123'
+            keyAlias 'shuidijinfu'
+            keyPassword 'shuidikeji123'
+        }
+    }
+
+    productFlavors {
+        shuidi{
+            buildConfigField "String", "API_HOST", "\"http://api.douyu.xxoojoke.com/v1/\""//API主地址
+            buildConfigField "String", "H5_HOST", "\"http://douyu.xxoojoke.com\""//H5地址
+            buildConfigField "String", "BAIQISHI_PARTNER_CODE", "\"sdjk\""//白骑士商户号
+            buildConfigField "String", "API_KEY", "\"EUuw9sf*df3DdUva\""//API密匙
+            buildConfigField "String", "ORC_APP_KEY", "\"oAdL5H8V2PeWGEZNX3fh1Ney646VviqH1unxkw2J6B\""//云识客 APP_KEY
+            buildConfigField "String", "ORC_SECRET_KEY", "\"3784F57A5E4D9221AFFF1A552DFD9597\""// 云识客 SECRET_KEY
+
+            applicationId 'tech.shuidikeji.shuidijinfu'
+            manifestPlaceholders = [
+
+                    TONGDUN_PARTNER_CODE:"sdjk", //同盾合作方标识
+                    BaiduMobAd_STAT_ID :"122641b5c3",//百度统计APPid
+                    BaiduMobAd_CHANNEL:"shuidi",//百度统计渠道号
+                    AMAP_APP_KEY:"800da659632bcfdb7fc9331d7305bb18"//高德地图APPkey
+
+            ]
+
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Rxjava & RxAndroid
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    //RxLifeCycle2
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.2'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.2'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    //ButterKnife注入
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //Glide图片加载
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'jp.wasabeef:glide-transformations:3.1.1@aar'
+    //图片转换工具
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //rxpermissions
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+
+    //秒支付
+    implementation (project(':beecloud')){
+        exclude group: 'com.android.support:appcompat-v7:28.0.0'
+    }
+
+    //云识客 身份认证/人脸识别
+    implementation ('name':'faceusdk_auth',ext: 'aar')
+    implementation ('name':'faceusdk_common',ext: 'aar')
+
+
+}
