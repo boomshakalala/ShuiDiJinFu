@@ -27,4 +27,9 @@ public class HomeModel extends BaseModel implements HomeContract.IHomeModel {
     public Observable<NotificationPojo> getNotification() {
         return mService.getNotification();
     }
+
+    @Override
+    public Observable<NotificationPojo> getLoginActivityUrl() {
+        return null;
+    }
 }
