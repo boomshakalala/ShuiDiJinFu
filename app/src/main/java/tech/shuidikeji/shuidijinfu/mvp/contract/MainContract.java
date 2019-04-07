@@ -8,11 +8,11 @@ import tech.shuidikeji.shuidijinfu.base.IBaseModel;
 import tech.shuidikeji.shuidijinfu.base.IBaseView;
 
 public interface MainContract {
-    interface IMainView extends IBaseView {
+    interface IMainView extends LocationContract.ILocationView {
 
     }
 
-    interface IMainModel extends IBaseModel {
+    interface IMainModel extends LocationContract.ILocationModel {
         Observable<String> postUserContacts(String data);
         Observable<String> postUserCallLog(String data);
         Observable<String> postUserSms(String data);

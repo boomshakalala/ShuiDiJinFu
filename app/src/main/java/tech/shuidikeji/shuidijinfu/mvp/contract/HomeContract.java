@@ -6,6 +6,7 @@ import java.util.List;
 import io.reactivex.Observable;
 import tech.shuidikeji.shuidijinfu.base.IBaseModel;
 import tech.shuidikeji.shuidijinfu.base.IBaseView;
+import tech.shuidikeji.shuidijinfu.pojo.HomeDialgPojo;
 import tech.shuidikeji.shuidijinfu.pojo.IndexPojo;
 import tech.shuidikeji.shuidijinfu.pojo.NotificationPojo;
 
@@ -21,7 +22,7 @@ public interface HomeContract {
         Observable<IndexPojo> getIndexLogin();
         Observable<IndexPojo> getIndexUnderReview();
         Observable<NotificationPojo> getNotification();
-        Observable<NotificationPojo> getLoginActivityUrl();
+        Observable<HomeDialgPojo> getLoginActivityUrl(int status);
 
     }
 

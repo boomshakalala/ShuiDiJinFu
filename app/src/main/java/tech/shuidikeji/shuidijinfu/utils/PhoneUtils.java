@@ -193,7 +193,7 @@ public class PhoneUtils {
             HashMap<String,String> hashMap = new HashMap<>();
             hashMap.put("call_location",call_location);
             hashMap.put("name",name);
-            hashMap.put("number",number);
+            hashMap.put("mobile",number);
             hashMap.put("call_time",dateLong+"");
             hashMap.put("duration_time",duration+"");
             hashMap.put("call_type",typeString);

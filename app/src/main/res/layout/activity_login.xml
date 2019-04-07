@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:text="手机号码"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:digits="1234567890"
+                android:textColorHint="#999999"
+                android:textSize="14dp"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_title_spline"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机验证码"
+                    android:textSize="14dp"
+                    android:textColor="#333333" />
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入短信验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:digits="1234567890"
+                    android:textColorHint="#999999"
+                    android:textSize="14dp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+
+            <tech.shuidikeji.shuidijinfu.widget.SuperButton
+                android:id="@+id/btn_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                app:pressColor="@color/gradient_end_color"
+                app:normalColor="@color/gradient_end_color"
+                app:unClickableColor="@color/gradient_start_color"
+                app:RoundedConnerRadius="50dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/check"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="同意"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/btn_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《注册授权协议》"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+    <tech.shuidikeji.shuidijinfu.widget.SuperButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="登录/注册"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:pressColor="@color/gradient_end_color"
+        app:normalColor="@color/gradient_end_color"
+        app:unClickableColor="@color/gradient_start_color"
+        app:RoundedConnerRadius="50dp"/>
+
+</LinearLayout>

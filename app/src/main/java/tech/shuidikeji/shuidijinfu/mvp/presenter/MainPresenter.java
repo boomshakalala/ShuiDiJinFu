@@ -14,7 +14,7 @@ import tech.shuidikeji.shuidijinfu.mvp.model.MainModel;
 import tech.shuidikeji.shuidijinfu.utils.RxUtils;
 import tech.shuidikeji.shuidijinfu.utils.log.LogUtil;
 
-public class MainPresenter extends BasePresenter<MainContract.IMainView, MainContract.IMainModel> {
+public class MainPresenter extends LocationPresenter<MainContract.IMainView, MainContract.IMainModel> {
     private Gson gson;
     public MainPresenter(MainContract.IMainView view) {
         super(view, new MainModel());

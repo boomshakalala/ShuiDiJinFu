@@ -6,13 +6,15 @@ import java.util.List;
 
 import io.reactivex.Observable;
 import tech.shuidikeji.shuidijinfu.base.BaseModel;
+import tech.shuidikeji.shuidijinfu.constants.PreferenceConstant;
 import tech.shuidikeji.shuidijinfu.mvp.contract.MainContract;
 import tech.shuidikeji.shuidijinfu.utils.PhoneUtils;
+import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 
-public class MainModel extends BaseModel implements MainContract.IMainModel {
+public class MainModel extends LocationModel implements MainContract.IMainModel {
     @Override
     public Observable<String> postUserContacts(String data) {
-        return mService.postUserContacts(data);
+        return mService.postUserContacts(SPUtils.getString(PreferenceConstant.USER_ID),data);
     }
 
     @Override

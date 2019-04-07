@@ -27,13 +27,14 @@ public abstract class RespObserver<T> implements Observer<T> {
         LogUtil.e("HttpError",e.getMessage());
         if (e instanceof ResultException){
             if (((ResultException) e).getCode() == 403100 || ((ResultException) e).getCode() == 403101){
-                new AlertDialog.Builder(ActivityManager.getInstance().getCurrentActivity())
-                        .setTitle("提示")
-                        .setMessage(e.getMessage())
-                        .setSingleButton("确定", v -> {
-
-                        }).build().show();
+//                new AlertDialog.Builder(ActivityManager.getInstance().getCurrentActivity())
+//                        .setTitle("提示")
+//                        .setMessage(e.getMessage())
+//                        .setSingleButton("确定", v -> {
+//
+//                        }).build().show();
                 SPUtils.putString(PreferenceConstant.TOKEN,"");
+                SPUtils.putString(PreferenceConstant.USER_ID,"");
             }
             onError(((ResultException) e).getCode(),e.getMessage());
         } else if (e instanceof Exception) {

@@ -29,12 +29,12 @@ import tech.shuidikeji.shuidijinfu.widget.ProgressDialog;
 import tech.shuidikeji.shuidijinfu.widget.TitleBar;
 
 public abstract class BaseActivity extends RxAppCompatActivity  {
+    protected static final int REQUEST_LOGIN = 102;
     private ProgressDialog mProgressDialog;
     private OnKeyClickListener mOnKeyClickListener;
     protected ViewGroup mRoot;
     private TitleBar mTitleBar;
     protected View mStatusBar;
-    protected String mTokenKey;
 
     /**
      * 按键的监听，供页面设置自定义的按键行为

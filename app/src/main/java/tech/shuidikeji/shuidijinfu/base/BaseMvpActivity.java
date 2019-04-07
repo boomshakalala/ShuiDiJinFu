@@ -48,9 +48,10 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseActiv
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         mPresenter = getPresenter();
-        super.onCreate(savedInstanceState);
         if (BqsDF.getInstance().canInitBqsSDK() && SPUtils.getBoolean(PreferenceConstant.AUTH_PERMISSION))
             initBqsDFSdk();
+        super.onCreate(savedInstanceState);
+
 
     }
 

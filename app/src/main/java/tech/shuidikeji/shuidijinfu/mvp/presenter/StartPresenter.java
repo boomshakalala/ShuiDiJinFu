@@ -27,6 +27,7 @@ public class StartPresenter extends BasePresenter<StartContract.IStartView,Start
                     public void onResult(AppConfigPojo data) {
                         //保存主页面底部tab数据
                         SPUtils.putObject(PreferenceConstant.MAIN_MENU,data.getMenu());
+                        SPUtils.putObject(PreferenceConstant.USER_MENU,data.getUser_menu());
                         SPUtils.putInt(PreferenceConstant.CHECK_STATUS,data.getCheck_status());
                         SPUtils.putString(PreferenceConstant.HOME_THEME,data.getTheme());
                         //初始化秒支付

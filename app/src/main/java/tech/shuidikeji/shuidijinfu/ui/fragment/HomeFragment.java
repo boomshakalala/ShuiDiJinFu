@@ -3,6 +3,7 @@ package tech.shuidikeji.shuidijinfu.ui.fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -17,6 +18,7 @@ import tech.shuidikeji.shuidijinfu.constants.PreferenceConstant;
 import tech.shuidikeji.shuidijinfu.mvp.contract.HomeContract;
 import tech.shuidikeji.shuidijinfu.mvp.presenter.HomePresenter;
 import tech.shuidikeji.shuidijinfu.pojo.IndexPojo;
+import tech.shuidikeji.shuidijinfu.ui.activity.WebDialogActivity;
 import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 import tech.shuidikeji.shuidijinfu.widget.DialView;
 import tech.shuidikeji.shuidijinfu.widget.VerticalTextview;
@@ -51,6 +53,9 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
     @BindView(R.id.tv_vertical)
     VerticalTextview mVerticalTv;
 
+    @BindView(R.id.btn_loan)
+    ImageView mLoanBtn;
+
     private String theme;
 
     public static HomeFragment newInstance(){
@@ -78,6 +83,12 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
         mVerticalTv.setAnimTime(300);//设置进入和退出的时间间隔
         mPresenter.getIndex();
         mPresenter.getNotification();
+        mPresenter.getLoginActivityUrl(SPUtils.getInt(PreferenceConstant.HOME_DIALOG_STATUS));
+        if (SPUtils.getInt(PreferenceConstant.CHECK_STATUS) == 2){
+            mLoanBtn.setImageResource(R.mipmap.buttom_loan);
+        }else {
+            mLoanBtn.setImageResource(R.mipmap.buttom_check);
+        }
     }
 
     @Override
@@ -110,7 +121,8 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
 
     @Override
     public void showIndexDialog(String url) {
-
+        WebDialogActivity.launcher(getContext(),url);
+        SPUtils.putInt(PreferenceConstant.HOME_DIALOG_STATUS,1);
     }
 
     @Override
