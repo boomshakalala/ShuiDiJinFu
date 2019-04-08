@@ -32,5 +32,7 @@ public class UrlConstant {
     public static final String LOGIN_CAPTCHA = "login/captcha";
     //用户登录
     public static final String LOGIN_SAVE =  "login/save";
+    //用户认证状态
+    public static final String USER_VERIFY_INFO = "user/verifyInfo";
 
 }

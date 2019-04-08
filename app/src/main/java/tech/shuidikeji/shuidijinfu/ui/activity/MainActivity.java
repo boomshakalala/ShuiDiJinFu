@@ -30,6 +30,7 @@ import tech.shuidikeji.shuidijinfu.ui.fragment.HomeFragment;
 import tech.shuidikeji.shuidijinfu.ui.fragment.UserFragment;
 import tech.shuidikeji.shuidijinfu.utils.CommonUtils;
 import tech.shuidikeji.shuidijinfu.utils.SPUtils;
+import tech.shuidikeji.shuidijinfu.utils.log.LogUtil;
 import tech.shuidikeji.shuidijinfu.widget.TabBar;
 import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
 

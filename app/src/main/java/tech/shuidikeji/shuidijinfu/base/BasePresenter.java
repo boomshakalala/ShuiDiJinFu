@@ -41,9 +41,9 @@ public class BasePresenter<V extends IBaseView,M extends IBaseModel> implements 
     public void commitTokenKey(String tokenKey,String userId) {
         mModel.commitTokenKey(tokenKey,userId)
                 .compose(RxUtils.transform(getView()))
-                .subscribe(new RespObserver<String>() {
+                .subscribe(new RespObserver<Object>() {
                     @Override
-                    public void onResult(String data) {
+                    public void onResult(Object data) {
                         LogUtil.e("提交Tokenkey成功");
                     }
 

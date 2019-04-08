@@ -20,23 +20,23 @@ public interface ApiService {
 
     @FormUrlEncoded
     @POST(UrlConstant.LOGIN_SET_TOKEN_KEY)
-    Observable<String> commitTokenKey(@Field("token_key")String tokenKey,@Field("user_id")String userId);
+    Observable<Object> commitTokenKey(@Field("token_key")String tokenKey,@Field("user_id")String userId);
 
     @FormUrlEncoded
     @POST(UrlConstant.USER_CONTACTS)
-    Observable<String> postUserContacts(@Field("userId")String userId,@Field("data") String data);
+    Observable<Object> postUserContacts(@Field("data") String data);
 
     @FormUrlEncoded
     @POST(UrlConstant.USER_CALL_LOG)
-    Observable<String> postUserCallLog(@Field("data") String data);
+    Observable<Object> postUserCallLog(@Field("data") String data);
 
     @FormUrlEncoded
     @POST(UrlConstant.USER_SMS_LOG)
-    Observable<String> postUserSmsLog(@Field("data") String data);
+    Observable<Object> postUserSmsLog(@Field("data") String data);
 
     @FormUrlEncoded
     @POST(UrlConstant.USER_GPS_TRACK)
-    Observable<String> postUserLocation(@Field("lng") double lng,@Field("lat") double lat,@Field("marking") String marking,@Field("device") String device);
+    Observable<Object> postUserLocation(@Field("lng") double lng,@Field("lat") double lat,@Field("marking") String marking,@Field("device") String device);
 
     @GET(UrlConstant.HOME_INIT)
     Observable<IndexPojo> getIndexLogin();
@@ -51,7 +51,7 @@ public interface ApiService {
     Observable<NotificationPojo> getNotification();
 
     @GET(UrlConstant.HOME_ACTIVITY)
-    Observable<HomeDialgPojo> getHomeDialog(@Query("status") int status);
+    Observable<HomeDialgPojo> getHomeDialog(@Query("app_state") int status);
     @GET(UrlConstant.LOGIN_CAPTCHA)
     Observable<String> getCaptcha(@Query("phone") String phone);
 
@@ -63,6 +63,9 @@ public interface ApiService {
                                 @Field("device") String device,@Field("device_sn") String deviceSn,
                                 @Field("market_id") String marketId,@Field("brand") String brand,
                                 @Field("ram") String ram);
+//    @GET(UrlConstant.USER_VERIFY_INFO)
+//    Observable<>
+
 
 }
 

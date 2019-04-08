@@ -8,7 +8,7 @@ import tech.shuidikeji.shuidijinfu.http.ApiService;
 public interface IBaseModel {
     ApiService mService = ApiEngine.getInstance().getApiService();
 
-    Observable<String> commitTokenKey(String tokenKey, String userId);
+    Observable<Object> commitTokenKey(String tokenKey, String userId);
 
 
 }

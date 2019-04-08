@@ -9,7 +9,6 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -24,6 +23,7 @@ import tech.shuidikeji.shuidijinfu.base.BaseMvpActivity;
 import tech.shuidikeji.shuidijinfu.mvp.contract.LoginContract;
 import tech.shuidikeji.shuidijinfu.mvp.presenter.LoginPresenter;
 import tech.shuidikeji.shuidijinfu.utils.SystemUtils;
+import tech.shuidikeji.shuidijinfu.utils.ToastUtils;
 import tech.shuidikeji.shuidijinfu.widget.SuperButton;
 
 public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements LoginContract.ILoginView, AMapLocationListener, TextWatcher {
@@ -117,7 +117,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                     showError("位置获取失败，请重试");
                     mLocationClient.startLocation();
                 }else if (!mCheckBox.isChecked()){
-                    Toast.makeText(this, "请先同意注册授权协议", Toast.LENGTH_SHORT).show();
+                    ToastUtils.showToast(this, "请先同意注册授权协议");
                 }else {
                     mPresenter.login(phone,code,tokenKey,lng,lat,"android","android",deviceSn,marketId,brand,ram);
                 }
@@ -132,7 +132,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
 
     @Override
     public void showGetCaptchaSuccess() {
-        // TODO: 弹吐司
+        ToastUtils.showToast(this,"验证码获取成功，有效期五分钟");
         mTimer.start();
     }
 

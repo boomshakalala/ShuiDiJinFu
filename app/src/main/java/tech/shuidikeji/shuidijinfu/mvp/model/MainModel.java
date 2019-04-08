@@ -13,17 +13,17 @@ import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 
 public class MainModel extends LocationModel implements MainContract.IMainModel {
     @Override
-    public Observable<String> postUserContacts(String data) {
-        return mService.postUserContacts(SPUtils.getString(PreferenceConstant.USER_ID),data);
+    public Observable<Object> postUserContacts(String data) {
+        return mService.postUserContacts(data);
     }
 
     @Override
-    public Observable<String> postUserCallLog(String data) {
+    public Observable<Object> postUserCallLog(String data) {
         return mService.postUserCallLog(data);
     }
 
     @Override
-    public Observable<String> postUserSms(String data) {
+    public Observable<Object> postUserSms(String data) {
         return mService.postUserSmsLog(data);
     }
 

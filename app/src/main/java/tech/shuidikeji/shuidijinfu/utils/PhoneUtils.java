@@ -11,10 +11,10 @@ import android.provider.ContactsContract;
 import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.text.format.DateUtils;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -77,7 +77,7 @@ public class PhoneUtils {
                 String contactName = cursor
                         .getString(PHONES_DISPLAY_NAME_INDEX);
 
-                phoneNumber = phoneNumber.trim();
+                phoneNumber = phoneNumber.trim().replaceAll("-","").replaceAll("_", "");
                 if (phoneNumber.length() < 10){
                     HashMap<String,String> contact = new HashMap<>();
                     contact.put("mobile",phoneNumber);
@@ -225,7 +225,7 @@ public class PhoneUtils {
             hashMap.put("sms_body",body);
             hashMap.put("mobile",number);
             hashMap.put("sms_type",type);
-            hashMap.put("sms_time", DateUtils.formatDateTime(AppUtils.getAppContext(),date,DateUtils.FORMAT_SHOW_YEAR|DateUtils.FORMAT_SHOW_DATE|DateUtils.FORMAT_SHOW_TIME));
+            hashMap.put("sms_time", DateUtils.formatDatetime(new Date(date)));
             result.add(hashMap);
         }
         cur.close();

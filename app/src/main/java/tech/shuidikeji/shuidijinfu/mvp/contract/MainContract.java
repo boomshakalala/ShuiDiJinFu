@@ -13,9 +13,9 @@ public interface MainContract {
     }
 
     interface IMainModel extends LocationContract.ILocationModel {
-        Observable<String> postUserContacts(String data);
-        Observable<String> postUserCallLog(String data);
-        Observable<String> postUserSms(String data);
+        Observable<Object> postUserContacts(String data);
+        Observable<Object> postUserCallLog(String data);
+        Observable<Object> postUserSms(String data);
 
         Observable<List<HashMap<String,String>>> getUserContacts();
 

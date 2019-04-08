@@ -8,10 +8,12 @@ import java.util.List;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import tech.shuidikeji.shuidijinfu.base.BasePresenter;
+import tech.shuidikeji.shuidijinfu.constants.PreferenceConstant;
 import tech.shuidikeji.shuidijinfu.http.RespObserver;
 import tech.shuidikeji.shuidijinfu.mvp.contract.MainContract;
 import tech.shuidikeji.shuidijinfu.mvp.model.MainModel;
 import tech.shuidikeji.shuidijinfu.utils.RxUtils;
+import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 import tech.shuidikeji.shuidijinfu.utils.log.LogUtil;
 
 public class MainPresenter extends LocationPresenter<MainContract.IMainView, MainContract.IMainModel> {
@@ -32,7 +34,10 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
 
                     @Override
                     public void onNext(List<HashMap<String, String>> hashMaps) {
-                        postContacts(gson.toJson(hashMaps));
+                        HashMap<String,Object> data = new HashMap<>();
+                        data.put("userId", SPUtils.getString(PreferenceConstant.USER_ID));
+                        data.put("data",hashMaps);
+                        postContacts(gson.toJson(data));
                     }
 
                     @Override
@@ -57,7 +62,9 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
 
                     @Override
                     public void onNext(List<HashMap<String, String>> hashMaps) {
-                        postSms(gson.toJson(hashMaps));
+                        HashMap<String,Object> data = new HashMap<>();
+                        data.put("data",hashMaps);
+                        postSms(gson.toJson(data));
                     }
 
                     @Override
@@ -82,7 +89,9 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
 
                     @Override
                     public void onNext(List<HashMap<String, String>> hashMaps) {
-                        postCallLog(gson.toJson(hashMaps));
+                        HashMap<String,Object> data = new HashMap<>();
+                        data.put("data",hashMaps);
+                        postCallLog(gson.toJson(data));
                     }
 
                     @Override
@@ -99,9 +108,9 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
     private void postContacts(String data){
         mModel.postUserContacts(data)
                 .compose(RxUtils.transform(getView()))
-                .subscribe(new RespObserver<String>() {
+                .subscribe(new RespObserver<Object>() {
                     @Override
-                    public void onResult(String data) {
+                    public void onResult(Object data) {
                         LogUtil.e("上传通讯录成功！");
                     }
 
@@ -115,9 +124,9 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
     private void postCallLog(String data){
         mModel.postUserCallLog(data)
                 .compose(RxUtils.transform(getView()))
-                .subscribe(new RespObserver<String>() {
+                .subscribe(new RespObserver<Object>() {
                     @Override
-                    public void onResult(String data) {
+                    public void onResult(Object data) {
                         LogUtil.e("上传通话记录成功！");
                     }
 
@@ -131,9 +140,9 @@ public class MainPresenter extends LocationPresenter<MainContract.IMainView, Mai
     private void postSms(String data){
         mModel.postUserSms(data)
                 .compose(RxUtils.transform(getView()))
-                .subscribe(new RespObserver<String>() {
+                .subscribe(new RespObserver<Object>() {
                     @Override
-                    public void onResult(String data) {
+                    public void onResult(Object data) {
                         LogUtil.e("上传短信成功！");
                     }
 

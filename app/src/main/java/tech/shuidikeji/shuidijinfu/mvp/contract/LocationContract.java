@@ -10,6 +10,6 @@ public interface LocationContract {
     }
 
     interface ILocationModel extends IBaseModel {
-        Observable<String> postLocation(double lng,double lat,String marking,String device);
+        Observable<Object> postLocation(double lng,double lat,String marking,String device);
     }
 }
