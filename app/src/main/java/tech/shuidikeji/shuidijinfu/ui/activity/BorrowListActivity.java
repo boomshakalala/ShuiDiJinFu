@@ -30,6 +30,12 @@ public class BorrowListActivity extends BaseListActivity<BorrowListPresenter> im
     }
 
     @Override
+    protected void initTitle() {
+        super.initTitle();
+        getTitleBar().setTitle("我的借款").showBack().show();
+    }
+
+    @Override
     protected boolean isLoadMoreEnable() {
         return true;
     }
@@ -57,16 +63,18 @@ public class BorrowListActivity extends BaseListActivity<BorrowListPresenter> im
         setContentView(R.layout.include_ptr_recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
+        onRefresh();
     }
 
     @Override
     protected void initData() {
         mAdapter = new BorrowListAdapter();
         mAdapter.setOnItemClickListener(this);
+        this.mEmptyIcon = R.mipmap.null_img;
     }
 
     @Override
-    public void showBorrowList(List<BorrowListPojo> data) {
+    public void showBorrowList(List<BorrowListPojo.BorrowPojo> data) {
         if (mCurrentPage == 1){
             mAdapter.setNewData(data);
             mAdapter.disableLoadMoreIfNotFullPage(mRecyclerView);

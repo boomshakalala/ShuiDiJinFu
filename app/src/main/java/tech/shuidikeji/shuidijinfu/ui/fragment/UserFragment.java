@@ -23,6 +23,7 @@ import tech.shuidikeji.shuidijinfu.mvp.presenter.UserPresenter;
 import tech.shuidikeji.shuidijinfu.pojo.AppConfigPojo;
 import tech.shuidikeji.shuidijinfu.pojo.VerifyInfoPojo;
 import tech.shuidikeji.shuidijinfu.ui.activity.AuthListActivity;
+import tech.shuidikeji.shuidijinfu.ui.activity.BankCardActivity;
 import tech.shuidikeji.shuidijinfu.ui.activity.BorrowListActivity;
 import tech.shuidikeji.shuidijinfu.ui.activity.LoginActivity;
 import tech.shuidikeji.shuidijinfu.ui.activity.WebViewActivity;
@@ -165,6 +166,7 @@ public class UserFragment extends BaseMvpFragment<UserPresenter> implements View
                 break;
             case "bank":
                 // TODO: 我的银行卡
+                BankCardActivity.launcher(getActivity());
                 break;
             case "help":
                 // 帮助中心

@@ -8,13 +8,13 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import tech.shuidikeji.shuidijinfu.R;
 import tech.shuidikeji.shuidijinfu.pojo.BorrowListPojo;
 
-public class BorrowListAdapter extends BaseQuickAdapter<BorrowListPojo, BaseViewHolder> {
+public class BorrowListAdapter extends BaseQuickAdapter<BorrowListPojo.BorrowPojo, BaseViewHolder> {
     public BorrowListAdapter() {
         super(R.layout.item_borrow_list);
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, BorrowListPojo item) {
+    protected void convert(BaseViewHolder helper, BorrowListPojo.BorrowPojo item) {
         helper.setText(R.id.tv_order_id,item.getSn());
         helper.setText(R.id.tv_status,item.getStatus_txt());
         helper.setText(R.id.tv_order_date,item.getCreate_time());

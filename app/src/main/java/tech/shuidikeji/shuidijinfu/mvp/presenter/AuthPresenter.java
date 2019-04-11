@@ -26,15 +26,19 @@ public class AuthPresenter extends BasePresenter<AuthListContract.IAuthView, Aut
                     getView().showEmpty();
                 } else{
                     List<AuthSection> sections = new ArrayList<>();
+                    List<AuthSection> sections1 = new ArrayList<>();
                     sections.add(new AuthSection(true,"必测项目"));
                     for (AuthListPojo datum : data) {
                         if (datum.getIs_opertional() == 1)
                             sections.add(new AuthSection(datum));
                     }
-                    sections.add(new AuthSection(true,"选测项目"));
                     for (AuthListPojo datum : data) {
                         if (datum.getIs_opertional() == 0)
-                            sections.add(new AuthSection(datum));
+                            sections1.add(new AuthSection(datum));
+                    }
+                    if (!CollectionUtils.isEmpty(sections1)){
+                        sections.add(new AuthSection(true,"选测项目"));
+                        sections.addAll(sections1);
                     }
                     getView().showAuthList(sections);
                 }

@@ -9,7 +9,7 @@ import tech.shuidikeji.shuidijinfu.pojo.BorrowListPojo;
 
 public class BorrowListModel extends BaseModel implements BorrowListContract.IBorrowListModel {
     @Override
-    public Observable<List<BorrowListPojo>> getBorrowList(int page) {
+    public Observable<BorrowListPojo> getBorrowList(int page) {
         return mService.getBorrowList(page);
     }
 }

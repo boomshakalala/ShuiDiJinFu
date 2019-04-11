@@ -39,6 +39,8 @@ public class UrlConstant {
     public static final String HOME_ACTIVITY = "home/activity";
     //登录获取验证码
     public static final String LOGIN_CAPTCHA = "login/captcha";
+    //登录获取图形验证码
+    public static final String LOGIN_VERICODE = "login/vericode";
     //用户登录
     public static final String LOGIN_SAVE =  "login/save";
     //用户认证状态

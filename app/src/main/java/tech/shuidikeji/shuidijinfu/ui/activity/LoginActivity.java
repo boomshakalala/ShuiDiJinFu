@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -16,12 +17,15 @@ import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.bqs.risk.df.android.BqsDF;
 
+import butterknife.BindInt;
 import butterknife.BindView;
 import butterknife.OnClick;
 import tech.shuidikeji.shuidijinfu.R;
 import tech.shuidikeji.shuidijinfu.base.BaseMvpActivity;
+import tech.shuidikeji.shuidijinfu.image.ImageManager;
 import tech.shuidikeji.shuidijinfu.mvp.contract.LoginContract;
 import tech.shuidikeji.shuidijinfu.mvp.presenter.LoginPresenter;
+import tech.shuidikeji.shuidijinfu.utils.MD5Utils;
 import tech.shuidikeji.shuidijinfu.utils.SystemUtils;
 import tech.shuidikeji.shuidijinfu.utils.ToastUtils;
 import tech.shuidikeji.shuidijinfu.widget.SuperButton;
@@ -35,6 +39,10 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
     EditText mCodeEt;
     @BindView(R.id.et_phone)
     EditText mPhoneEt;
+    @BindView(R.id.et_img_code)
+    EditText mImgCodeEt;
+    @BindView(R.id.iv_code)
+    ImageView mCodeIv;
     @BindView(R.id.btn_code)
     SuperButton mCodeBtn;
     @BindView(R.id.btn_login)
@@ -53,6 +61,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
     private String marketId;
     private String brand;
     private String ram;
+    private String uuid;
 
 
     public static void launcher(Activity activity){
@@ -89,6 +98,8 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                 isTimerRunning = false;
             }
         };
+        uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
+        mPresenter.getImageCode(uuid);
     }
 
     @Override
@@ -111,6 +122,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
     public void onClick(View v){
         String phone = mPhoneEt.getText().toString();
         String code = mCodeEt.getText().toString();
+        String imageCode = mImgCodeEt.getText().toString();
         switch (v.getId()){
             case R.id.btn_code:
                 mPresenter.getCaptcha(phone);
@@ -123,9 +135,13 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                     mLocationClient.startLocation();
                 }else if (!mCheckBox.isChecked()){
                     ToastUtils.showToast(this, "请先同意注册授权协议");
-                }else {
-                    mPresenter.login(phone,code,tokenKey,lng,lat,"android","android",deviceSn,marketId,brand,ram);
+                } else {
+                    mPresenter.login(phone,imageCode,uuid,code,tokenKey,lng,lat,"android","android",deviceSn,marketId,brand,ram);
                 }
+                break;
+            case R.id.iv_code:
+                uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
+                mPresenter.getImageCode(uuid);
                 break;
         }
     }
@@ -139,6 +155,11 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
     public void showGetCaptchaSuccess() {
         ToastUtils.showToast(this,"验证码获取成功，有效期五分钟");
         mTimer.start();
+    }
+
+    @Override
+    public void showImageCodeSuccess(String url) {
+        ImageManager.getInstance().loadNet(url,mCodeIv);
     }
 
     @Override

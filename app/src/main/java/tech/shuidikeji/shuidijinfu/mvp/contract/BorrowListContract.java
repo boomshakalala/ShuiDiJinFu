@@ -11,10 +11,10 @@ import tech.shuidikeji.shuidijinfu.pojo.BorrowListPojo;
 
 public interface BorrowListContract {
     interface IBorrowListView extends IBaseView {
-        void showBorrowList(List<BorrowListPojo> data);
+        void showBorrowList(List<BorrowListPojo.BorrowPojo> data);
     }
 
     interface IBorrowListModel extends IBaseModel{
-        Observable<List<BorrowListPojo>> getBorrowList(int page);
+        Observable<BorrowListPojo> getBorrowList(int page);
     }
 }

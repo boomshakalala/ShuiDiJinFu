@@ -5,6 +5,7 @@ import tech.shuidikeji.shuidijinfu.constants.PreferenceConstant;
 import tech.shuidikeji.shuidijinfu.http.RespObserver;
 import tech.shuidikeji.shuidijinfu.mvp.contract.LoginContract;
 import tech.shuidikeji.shuidijinfu.mvp.model.LoginModel;
+import tech.shuidikeji.shuidijinfu.pojo.ImageCodePojo;
 import tech.shuidikeji.shuidijinfu.pojo.LoginPojo;
 import tech.shuidikeji.shuidijinfu.utils.RxUtils;
 import tech.shuidikeji.shuidijinfu.utils.SPUtils;
@@ -33,11 +34,25 @@ public class LoginPresenter extends BasePresenter<LoginContract.ILoginView, Logi
                 });
     }
 
-    public void login(String phone, String captcha, String tokenKey, double lng,
+    public void getImageCode(String uuid){
+        mModel.getImageCode(uuid).compose(RxUtils.transform(getView())).subscribe(new RespObserver<ImageCodePojo>() {
+            @Override
+            public void onResult(ImageCodePojo data) {
+                getView().showImageCodeSuccess(data.getUrl());
+            }
+
+            @Override
+            public void onError(int errCode, String errMsg) {
+
+            }
+        });
+    }
+
+    public void login(String phone,String vericode,String uuid, String captcha, String tokenKey, double lng,
                       double lat, String registerType, String device, String deviceSn,
                       String marketId, String brand, String ram){
         getView().showProgressDialog();
-        mModel.login(phone,captcha,tokenKey,lng,lat,registerType,device,deviceSn,marketId,brand,ram)
+        mModel.login(phone,vericode,uuid,captcha,tokenKey,lng,lat,registerType,device,deviceSn,marketId,brand,ram)
                 .compose(RxUtils.transform(getView()))
                 .subscribe(new RespObserver<LoginPojo>() {
                     @Override

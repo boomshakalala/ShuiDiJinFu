@@ -42,6 +42,12 @@ public class BankCardActivity  extends BaseMvpActivity<BankCardPresenter> implem
     }
 
     @Override
+    protected void initTitle() {
+        super.initTitle();
+        getTitleBar().setTitle("我的银行卡").showBack().show();
+    }
+
+    @Override
     protected BankCardPresenter getPresenter() {
         return new BankCardPresenter(this);
     }
@@ -72,4 +78,6 @@ public class BankCardActivity  extends BaseMvpActivity<BankCardPresenter> implem
         }
 
     }
+
+
 }

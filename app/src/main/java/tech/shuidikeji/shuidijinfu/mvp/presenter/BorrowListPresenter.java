@@ -17,17 +17,19 @@ public class BorrowListPresenter extends BasePresenter<BorrowListContract.IBorro
 
     public void getBorrowList(int page){
         getView().showLoading();
-        mModel.getBorrowList(page).compose(RxUtils.transform(getView())).subscribe(new RespObserver<List<BorrowListPojo>>() {
+        mModel.getBorrowList(page).compose(RxUtils.transform(getView())).subscribe(new RespObserver<BorrowListPojo>() {
             @Override
-            public void onResult(List<BorrowListPojo> data) {
-                if (CollectionUtils.isEmpty(data))
+            public void onResult(BorrowListPojo data) {
+                if (CollectionUtils.isEmpty(data.getData()))
                     getView().showEmpty();
                 else
-                    getView().showBorrowList(data);
+                    getView().showBorrowList(data.getData());
+                getView().hideLoading();
             }
 
             @Override
             public void onError(int errCode, String errMsg) {
+                getView().hideLoading();
                 getView().showError(errMsg);
             }
         });
