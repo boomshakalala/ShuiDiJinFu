@@ -23,6 +23,9 @@ import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 import tech.shuidikeji.shuidijinfu.widget.DialView;
 import tech.shuidikeji.shuidijinfu.widget.VerticalTextview;
 
+/**
+ * 首页
+ */
 public class HomeFragment extends BaseMvpFragment<HomePresenter> implements HomeContract.IHomeView {
 
     @BindView(R.id.tv_total)
@@ -81,9 +84,6 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
         mVerticalTv.setText(16, 5, getResourceColor(R.color.text_color_title));//设置属性
         mVerticalTv.setTextStillTime(3000);//设置停留时长间隔
         mVerticalTv.setAnimTime(300);//设置进入和退出的时间间隔
-        mPresenter.getIndex();
-        mPresenter.getNotification();
-        mPresenter.getLoginActivityUrl(SPUtils.getInt(PreferenceConstant.HOME_DIALOG_STATUS));
         if (SPUtils.getInt(PreferenceConstant.CHECK_STATUS) == 2){
             mLoanBtn.setImageResource(R.mipmap.buttom_loan);
         }else {
@@ -129,11 +129,20 @@ public class HomeFragment extends BaseMvpFragment<HomePresenter> implements Home
     public void onResume() {
         super.onResume();
         mVerticalTv.startAutoScroll();
+        refresh();
+
     }
 
     @Override
     public void onPause() {
         super.onPause();
         mVerticalTv.stopAutoScroll();
+    }
+
+    private void refresh(){
+        mVerticalTv.startAutoScroll();
+        mPresenter.getNotification();
+        mPresenter.getIndex();
+        mPresenter.getLoginActivityUrl(SPUtils.getInt(PreferenceConstant.HOME_DIALOG_STATUS));
     }
 }

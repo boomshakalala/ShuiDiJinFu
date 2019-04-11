@@ -44,6 +44,7 @@ public class LoginPresenter extends BasePresenter<LoginContract.ILoginView, Logi
                     public void onResult(LoginPojo data) {
                         SPUtils.putString(PreferenceConstant.TOKEN,data.getToken());
                         SPUtils.putString(PreferenceConstant.USER_ID,data.getUser_id());
+                        SPUtils.putString(PreferenceConstant.USER_PHONE,phone);
                         getView().dismissProgressDialog();
                         getView().showLoginSuccess();
                     }

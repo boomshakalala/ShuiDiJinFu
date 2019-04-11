@@ -27,7 +27,7 @@ public  class LocationPresenter<V extends LocationContract.ILocationView,M exten
 
                     @Override
                     public void onError(int errCode, String errMsg) {
-
+                        getView().showPostLocationFailure();
                     }
                 });
     }

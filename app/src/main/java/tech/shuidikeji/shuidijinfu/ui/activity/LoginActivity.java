@@ -26,6 +26,9 @@ import tech.shuidikeji.shuidijinfu.utils.SystemUtils;
 import tech.shuidikeji.shuidijinfu.utils.ToastUtils;
 import tech.shuidikeji.shuidijinfu.widget.SuperButton;
 
+/**
+ * 注册登录页
+ */
 public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements LoginContract.ILoginView, AMapLocationListener, TextWatcher {
 
     @BindView(R.id.et_code)
@@ -68,6 +71,8 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
         setContentView(R.layout.activity_login);
         mCodeEt.addTextChangedListener(this);
         mPhoneEt.addTextChangedListener(this);
+        mCodeBtn.setCanClick(false);
+        mLoginBtn.setCanClick(false);
         mTimer = new CountDownTimer(60000,1000) {
             @SuppressLint("DefaultLocale")
             @Override

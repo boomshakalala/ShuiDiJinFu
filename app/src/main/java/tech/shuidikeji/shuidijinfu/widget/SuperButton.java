@@ -18,9 +18,9 @@ import tech.shuidikeji.shuidijinfu.utils.AppUtils;
  * 自动跟换背景的按钮
  */
 public class SuperButton extends AppCompatButton {
-    public static final int DEFAULT_CLICKABLE_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.gradient_end_color);
-    public static final int DEFAULT_UN_CLICKABLE_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.gradient_start_color);
-    public static final int DEFAULT_PRESS_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.gradient_start_color);
+    public static final int DEFAULT_CLICKABLE_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.color_main);
+    public static final int DEFAULT_UN_CLICKABLE_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.color_main);
+    public static final int DEFAULT_PRESS_COLOR = AppUtils.getAppContext().getResources().getColor(R.color.color_main);
 
     private int mColor;//可点击背景色
     private int mPressColor;//按下背景色

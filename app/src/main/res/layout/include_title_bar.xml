@@ -111,5 +111,5 @@
         android:id="@+id/v_title_divider"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@color/bg_title_spline"/>
+        android:background="@color/color_spline"/>
 </merge>

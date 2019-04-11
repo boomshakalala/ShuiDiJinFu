@@ -1,6 +1,8 @@
 package tech.shuidikeji.shuidijinfu.http;
 
 
+import java.util.List;
+
 import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -9,10 +11,16 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 import tech.shuidikeji.shuidijinfu.constants.UrlConstant;
 import tech.shuidikeji.shuidijinfu.pojo.AppConfigPojo;
+import tech.shuidikeji.shuidijinfu.pojo.AuthListPojo;
+import tech.shuidikeji.shuidijinfu.pojo.BankCardPojo;
+import tech.shuidikeji.shuidijinfu.pojo.BorrowListPojo;
 import tech.shuidikeji.shuidijinfu.pojo.HomeDialgPojo;
+import tech.shuidikeji.shuidijinfu.pojo.IdCardPojo;
 import tech.shuidikeji.shuidijinfu.pojo.IndexPojo;
 import tech.shuidikeji.shuidijinfu.pojo.LoginPojo;
+import tech.shuidikeji.shuidijinfu.pojo.MessageUnReadPojo;
 import tech.shuidikeji.shuidijinfu.pojo.NotificationPojo;
+import tech.shuidikeji.shuidijinfu.pojo.VerifyInfoPojo;
 
 public interface ApiService {
     @GET(UrlConstant.LOGOUT_APPELEMENTS)
@@ -52,6 +60,7 @@ public interface ApiService {
 
     @GET(UrlConstant.HOME_ACTIVITY)
     Observable<HomeDialgPojo> getHomeDialog(@Query("app_state") int status);
+
     @GET(UrlConstant.LOGIN_CAPTCHA)
     Observable<String> getCaptcha(@Query("phone") String phone);
 
@@ -63,8 +72,29 @@ public interface ApiService {
                                 @Field("device") String device,@Field("device_sn") String deviceSn,
                                 @Field("market_id") String marketId,@Field("brand") String brand,
                                 @Field("ram") String ram);
-//    @GET(UrlConstant.USER_VERIFY_INFO)
-//    Observable<>
+
+    @GET(UrlConstant.USER_VERIFY_INFO)
+    Observable<VerifyInfoPojo> getUserVerifyInfo();
+
+    @GET(UrlConstant.MESSAGE_UNREAD)
+    Observable<MessageUnReadPojo> getMessageUnRead();
+
+    @GET(UrlConstant.VERIFY_CHOICE)
+    Observable<List<AuthListPojo>> getAuthList();
+
+    @FormUrlEncoded
+    @POST(UrlConstant.VERIFY_ORC_IDCARD)
+    Observable<IdCardPojo> uploadIdCard(@Field("idcard_picture_1") String frontImage,@Field("idcard_picture_2") String backImage,@Field("idcard_picture_3") String faceImage);
+
+    @POST(UrlConstant.VERIFY_ORC_IDCARD_SAVE)
+    Observable<Object> commitIdCard(@Field("name") String name,@Field("sex") String sex,@Field("nation") String nation,@Field("birth") String birth,@Field("address") String address,@Field("number") String number);
+
+    @GET(UrlConstant.USER_RECORD)
+    Observable<List<BorrowListPojo>> getBorrowList(@Query("page")int page);
+
+    @GET(UrlConstant.USER_BANK_INFO)
+    Observable<BankCardPojo> getBankCard();
+
 
 
 }

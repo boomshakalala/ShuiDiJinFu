@@ -50,9 +50,12 @@
             android:value="${AMAP_APP_KEY}"/>
 
         <service android:name="com.amap.api.location.APSService"/>
-
-
         <!-- 高德地图配置结束 -->
+        <!-- 同盾配置开始 -->
+        <meta-data
+            android:name="PARTNER_CODE"
+            android:value="${TONGDUN_PARTNER_CODE}" />
+        <!-- 同盾配置结束 -->
         <activity android:name=".ui.activity.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -67,5 +70,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/DialogActivityTheme"/>
         <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.AuthListActivity" />
+        <activity android:name=".ui.activity.IdCardAuthActivity" />
+        <activity android:name=".ui.activity.WebViewActivity" />
+        <activity android:name=".ui.activity.BorrowListActivity" />
+        <activity android:name=".ui.activity.BankCardActivity" />
     </application>
 </manifest>

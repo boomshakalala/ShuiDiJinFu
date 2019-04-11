@@ -38,7 +38,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:text=""
-                        android:textColor="#90ffffff" />
+                        android:textColor="@color/color_text_light" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="45dp"
                                 android:text=""
-                                android:textColor="#ffffff"
+                                android:textColor="@color/color_text_light"
                                 android:textSize="18dp" />
 
                             <TextView
@@ -73,7 +73,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:text=""
-                                android:textColor="#ffffff"
+                                android:textColor="@color/color_text_light"
                                 android:textSize="35dp" />
 
                         </LinearLayout>
@@ -90,7 +90,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
-                            android:textColor="#90ffffff"
+                            android:textColor="@color/color_text_light"
                             android:textSize="13sp" />
 
                         <TextView
@@ -99,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:text=""
-                            android:textColor="#90ffffff"
+                            android:textColor="@color/color_text_light"
                             android:textSize="13dp" />
 
                         <TextView
@@ -108,7 +108,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:text=""
-                            android:textColor="#90ffffff"
+                            android:textColor="@color/color_text_light"
                             android:textSize="13dp" />
 
                     </RelativeLayout>
@@ -137,7 +137,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
                             android:text=""
-                            android:textColor="#333333"
+                            android:textColor="@color/color_text_dark"
                             android:textSize="18dp" />
 
                         <TextView
@@ -146,7 +146,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text=""
-                            android:textColor="#333333"
+                            android:textColor="@color/color_text_dark"
                             android:textSize="45sp" />
 
                         <TextView
@@ -155,7 +155,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             android:text=""
-                            android:textColor="#333333" />
+                            android:textColor="@color/color_text_dark" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -174,7 +174,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="1分钟申请"
-                                android:textColor="#333333"
+                                android:textColor="@color/color_text_dark"
                                 android:textSize="11dp" />
 
                             <ImageView
@@ -187,7 +187,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="5分钟审批"
-                                android:textColor="#333333"
+                                android:textColor="@color/color_text_dark"
                                 android:textSize="11dp" />
 
                             <ImageView
@@ -200,7 +200,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="10分钟放款"
-                                android:textColor="#333333"
+                                android:textColor="@color/color_text_dark"
                                 android:textSize="11dp" />
 
                         </LinearLayout>
@@ -230,7 +230,7 @@
                 android:paddingRight="3dp"
                 android:paddingTop="1dp"
                 android:text="HOT"
-                android:textColor="@color/white"
+                android:textColor="@color/color_text_light"
                 android:textSize="12sp" />
             <tech.shuidikeji.shuidijinfu.widget.VerticalTextview
                 android:id="@+id/tv_vertical"
@@ -264,7 +264,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="本平台不向未成年人及学生提供借款服务"
-                android:textColor="#999999"
+                android:textColor="@color/color_text_gray"
                 android:textSize="13dp" />
 
         </LinearLayout>

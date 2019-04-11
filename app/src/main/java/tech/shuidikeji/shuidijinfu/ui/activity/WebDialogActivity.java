@@ -18,7 +18,11 @@ import butterknife.BindView;
 import tech.shuidikeji.shuidijinfu.BuildConfig;
 import tech.shuidikeji.shuidijinfu.R;
 import tech.shuidikeji.shuidijinfu.base.BaseActivity;
+import tech.shuidikeji.shuidijinfu.utils.JavaScriptinterface;
 
+/**
+ * 首页弹窗
+ */
 public class WebDialogActivity extends BaseActivity {
 
     @BindView(R.id.web_view)
@@ -53,7 +57,7 @@ public class WebDialogActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.KITKAT)
             WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
         //设置与JS交互
-        mWebView.addJavascriptInterface(new JavaScriptinterface(), "App");
+        mWebView.addJavascriptInterface(new JavaScriptinterface(this), "App");
 
         //覆盖WebView默认使用第三方或系统默认浏览器打开网页的行为，使网页用WebView打开
         mWebView.setWebViewClient(new WebViewClient() {
@@ -96,14 +100,5 @@ public class WebDialogActivity extends BaseActivity {
         url = getIntent().getStringExtra("url");
     }
 
-    public class JavaScriptinterface {
-        /*
-         * JS调用android的方法
-         * @JavascriptInterface仍然必不可少
-         * */
-        @JavascriptInterface
-        public void backApp() {
-            finish();
-        }
-    }
+
 }

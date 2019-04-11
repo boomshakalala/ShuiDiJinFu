@@ -45,17 +45,18 @@ android {
 
     productFlavors {
         shuidi{
-            buildConfigField "String", "API_HOST", "\"http://api.douyu.xxoojoke.com/v1/\""//API主地址
-            buildConfigField "String", "H5_HOST", "\"http://douyu.xxoojoke.com\""//H5地址
-            buildConfigField "String", "BAIQISHI_PARTNER_CODE", "\"sdjk\""//白骑士商户号
+            buildConfigField "String", "API_HOST", "\"http://api.douyu.rryouxin.com/v1/\""//API主地址
+            buildConfigField "String", "H5_HOST", "\"http://douyu.rryouxin.com\""//H5地址
+            buildConfigField "String", "BAIQISHI_PARTNER_CODE", "\"sdkj\""//白骑士商户号
             buildConfigField "String", "API_KEY", "\"EUuw9sf*df3DdUva\""//API密匙
-            buildConfigField "String", "ORC_APP_KEY", "\"oAdL5H8V2PeWGEZNX3fh1Ney646VviqH1unxkw2J6B\""//云识客 APP_KEY
-            buildConfigField "String", "ORC_SECRET_KEY", "\"3784F57A5E4D9221AFFF1A552DFD9597\""// 云识客 SECRET_KEY
+            buildConfigField "String", "ORC_APP_KEY", "\"nJY1banGHDb1H2ACrGhsJVdeRk3ehba5um26wngUgg\""//云识客 APP_KEY
+            buildConfigField "String", "ORC_SECRET_KEY", "\"64DF6CCC1AE53C20DCE7B1EF93089AF1\""// 云识客 SECRET_KEY
+
 
             applicationId 'tech.shuidikeji.shuidijinfu'
             manifestPlaceholders = [
 
-                    TONGDUN_PARTNER_CODE:"sdjk", //同盾合作方标识
+                    TONGDUN_PARTNER_CODE:"sdkj", //同盾合作方标识
                     BaiduMobAd_STAT_ID :"122641b5c3",//百度统计APPid
                     BaiduMobAd_CHANNEL:"shuidi",//百度统计渠道号
                     AMAP_APP_KEY:"014d88205a2119045fada2b1752991c4"//高德地图APPkey
@@ -64,7 +65,13 @@ android {
 
         }
     }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+
 }
+
 
 repositories {
     flatDir {
@@ -115,8 +122,7 @@ dependencies {
     }
 
     //云识客 身份认证/人脸识别
-    implementation ('name':'faceusdk_auth',ext: 'aar')
-    implementation ('name':'faceusdk_common',ext: 'aar')
+    implementation ('name':'idauthsdk',ext: 'aar')
 
 
 }

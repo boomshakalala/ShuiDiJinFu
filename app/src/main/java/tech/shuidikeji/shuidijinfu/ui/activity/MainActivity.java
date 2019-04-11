@@ -34,14 +34,17 @@ import tech.shuidikeji.shuidijinfu.utils.log.LogUtil;
 import tech.shuidikeji.shuidijinfu.widget.TabBar;
 import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
 
+/**
+ * 主页面
+ */
 public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabBar.OnTabCheckListener, MainContract.IMainView, AMapLocationListener {
 
     private static final int REQUEST_CODE_SETTING = 103;
 
-    @BindColor(R.color.main_tab_text_focus)
+    @BindColor(R.color.color_main)
     int mFocusColor;
 
-    @BindColor(R.color.main_tab_text_un_focus)
+    @BindColor(R.color.color_text_gray)
     int mUnFocusColor;
 
     private List<AppConfigPojo.Menu> mMainMenu;
@@ -192,6 +195,11 @@ public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabB
 
     @Override
     public void showPostLocationSuccess() {
+
+    }
+
+    @Override
+    public void showPostLocationFailure() {
 
     }
 

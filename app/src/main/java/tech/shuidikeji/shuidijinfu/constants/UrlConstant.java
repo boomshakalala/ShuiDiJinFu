@@ -6,6 +6,15 @@ public class UrlConstant {
     public static String API_HOST = BuildConfig.API_HOST;
     public static String H5_HOST = BuildConfig.H5_HOST;
 
+    //帮助中心H5
+    public static final String HELP_QA = H5_HOST + "/help/qa";
+    //关于我们
+    public static final String HELP_ABOUT = H5_HOST + "/help/about";
+    //联系我们
+    public static final String HELP_CONCAT = H5_HOST + "/help/concat";
+    //
+    public static final String HELP_USER_PROTOCOL = H5_HOST + "/help/user_protocol";
+
     //获取APP配置信息
     public static final String LOGOUT_APPELEMENTS = "logout/appelements";
     //提交白骑士设备指纹
@@ -34,5 +43,18 @@ public class UrlConstant {
     public static final String LOGIN_SAVE =  "login/save";
     //用户认证状态
     public static final String USER_VERIFY_INFO = "user/verifyInfo";
+    //用户未读消息数
+    public static final String MESSAGE_UNREAD = "message/unread";
+    //认证项目
+    public static final String VERIFY_CHOICE = "verify/verifychoice";
+    //上传身份证图片
+    public static final String VERIFY_ORC_IDCARD = "verifyocr/idcard";
+    //提交身份认证
+    public static final String VERIFY_ORC_IDCARD_SAVE = "verifyocr/idcard_save";
+    //借款记录
+    public static final String USER_RECORD = "user/record";
+    //银行卡
+    public static final String USER_BANK_INFO = "user/bank_info";
+
 
 }

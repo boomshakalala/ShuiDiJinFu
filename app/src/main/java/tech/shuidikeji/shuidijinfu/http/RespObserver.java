@@ -7,6 +7,7 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import tech.shuidikeji.shuidijinfu.base.ActivityManager;
 import tech.shuidikeji.shuidijinfu.constants.PreferenceConstant;
+import tech.shuidikeji.shuidijinfu.utils.CommonUtils;
 import tech.shuidikeji.shuidijinfu.utils.SPUtils;
 import tech.shuidikeji.shuidijinfu.utils.log.LogUtil;
 import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
@@ -33,8 +34,7 @@ public abstract class RespObserver<T> implements Observer<T> {
                         .setSingleButton("确定", v -> {
 
                         }).build().show();
-                SPUtils.putString(PreferenceConstant.TOKEN,"");
-                SPUtils.putString(PreferenceConstant.USER_ID,"");
+                CommonUtils.clearLoginInfo();
             }
             onError(((ResultException) e).getCode(),e.getMessage());
         } else if (e instanceof Exception) {

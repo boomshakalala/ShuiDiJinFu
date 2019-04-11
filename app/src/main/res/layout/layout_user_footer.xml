@@ -9,13 +9,13 @@
 
 
     <TextView
-        android:id="@+id/id_tuichu"
+        android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"
         android:text="退出登录"
         android:background="@color/white"
-        android:textColor="#999999"/>
+        android:textColor="@color/color_text_gray"/>
 
 
 </LinearLayout>

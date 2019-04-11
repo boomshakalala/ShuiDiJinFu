@@ -7,6 +7,7 @@ import tech.shuidikeji.shuidijinfu.base.IBaseView;
 public interface LocationContract {
     interface ILocationView extends IBaseView {
         void showPostLocationSuccess();
+        void showPostLocationFailure();
     }
 
     interface ILocationModel extends IBaseModel {

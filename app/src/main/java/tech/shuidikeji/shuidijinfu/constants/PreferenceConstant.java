@@ -12,4 +12,5 @@ public class PreferenceConstant {
     public static final String TOKEN = "token";
     public static final String USER_ID = "user_id";
     public static final String HOME_DIALOG_STATUS = "home_dialog_status";
+    public static final String USER_PHONE = "user_phone";
 }

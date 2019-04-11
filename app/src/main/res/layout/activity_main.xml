@@ -11,7 +11,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="#c9c9c9"/>
+        android:background="@color/color_spline"/>
     <tech.shuidikeji.shuidijinfu.widget.TabBar
         android:id="@+id/tab_bar"
         android:layout_width="match_parent"
