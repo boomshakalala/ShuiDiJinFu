@@ -19,17 +19,21 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="HttpLog" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad2c5272-b68d-49e5-a74e-024ad88ba193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_app_libs_baiqishi_risk_sdk_2_3_2_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_app_libs_fm_sdk_3_1_6_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_Cashier_SDK_v4_2_0_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_UPPayAssistEx_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_alipaySdk_20160809_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/ImageCodePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/null_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/FaceLiveAuthContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/FaceLiveAuthModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/FaceLiveAuthPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_face_live_tip.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_live_auth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/l1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/l2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/l3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/l4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/lt.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -40,10 +44,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_app_libs_baiqishi_risk_sdk_2_3_2_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_app_libs_fm_sdk_3_1_6_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_Cashier_SDK_v4_2_0_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_UPPayAssistEx_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___F__Android_ShuiDiJinFu_beecloud_libs_alipaySdk_20160809_jar_unspecified_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle___idauthsdk__aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle___idauthsdk__aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
@@ -90,24 +97,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_glide_transformations_3_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_glide_transformations_3_1_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/BorrowListContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/BorrowListContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/LoginContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/LoginContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BorrowListModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BorrowListModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BorrowListPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BorrowListPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LoginPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BorrowListPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BorrowListPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/BorrowListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/BorrowListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/MD5Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardAuthPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/BitmapUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/BitmapUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beecloud/beecloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/beecloud/beecloud.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
@@ -177,18 +174,18 @@
     <session id="394275247">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
+          <entry key="class" value="7" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="163" />
-          <entry key="xml" value="67" />
+          <entry key="java" value="177" />
+          <entry key="xml" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="7" />
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="163" />
-          <entry key="XML" value="67" />
+          <entry key="JAVA" value="177" />
+          <entry key="XML" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -202,18 +199,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="17" />
+          <entry key="dummy" value="32" />
           <entry key="gradle" value="11" />
-          <entry key="java" value="10508" />
-          <entry key="xml" value="1697" />
+          <entry key="java" value="11101" />
+          <entry key="xml" value="1797" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="11" />
-          <entry key="JAVA" value="10508" />
-          <entry key="PLAIN_TEXT" value="17" />
-          <entry key="XML" value="1697" />
+          <entry key="JAVA" value="11101" />
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="XML" value="1797" />
         </counts>
       </usages-collector>
     </session>
@@ -221,10 +218,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state relative-caret-position="292">
+              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+              <folding>
+                <element signature="e#4413#4414#0" expanded="true" />
+                <element signature="e#4484#4485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <folding>
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#2327#2328#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#2662#2663#0" expanded="true" />
+                <element signature="e#2714#2715#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/FaceLiveAuthContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/FaceLiveAuthModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,56 +269,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/BorrowListAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BorrowListPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+            <state relative-caret-position="530">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            <state relative-caret-position="479">
+              <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BorrowListModel.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/IBaseModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardAuthPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#commitIdCard#0;class#IdCardPresenter#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/FaceLiveAuthPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#1029#1030#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -327,6 +371,7 @@
       <find>authSuccess</find>
       <find>color_text_gray</find>
       <find>mAdapter</find>
+      <find>idcard_picture_</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/src/main/res</dir>
@@ -4202,22 +4247,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/RespObserver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/BitmapUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthListContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/IdCardPojo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/IdCardAuthModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/IdCardAuthContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/LocationContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LocationPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_idcard_auth.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/JavaScriptinterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/WebDialogActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml" />
@@ -4225,7 +4256,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BrorrowListPojo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_borrow_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bank.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_bank_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BankCardPojo.java" />
@@ -4235,7 +4265,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bank_card.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/DataOptionUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/ImageCodePojo.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/MD5Utils.java" />
@@ -4248,11 +4277,27 @@
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BorrowListPojo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/BorrowListContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BorrowListModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/BorrowListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BorrowListPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/BitmapUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLivenessActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_face_live_tip.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_face_live.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/FaceLiveModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardAuthPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/FaceAuthPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/FaceLiveAuthContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/FaceLiveAuthModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/FaceLiveAuthPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" />
       </list>
     </option>
   </component>
@@ -4262,16 +4307,12 @@
     <option name="width" value="1750" />
     <option name="height" value="1250" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -4282,12 +4323,47 @@
             <path>
               <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="jniLibs" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="shuidijinfu" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="shuidijinfu" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="mvp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="shuidijinfu" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="mvp" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="shuidijinfu" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="mvp" type="462c0819:PsiDirectoryNode" />
+              <item name="presenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
@@ -4297,6 +4373,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -4333,32 +4410,35 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="AuthA&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.AuthListActivity&#10;BorrowListA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java&#10;BankCardAc&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java&#10;IdCar&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.IdCardAuthActivity&#10;LoginA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;LogiNA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;UserFr&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;BAN&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java&#10;ApiS&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;UserF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;BaseListA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseListActivity.java&#10;uRLc&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java&#10;uSER&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;UrlC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java&#10;UlrC&#9;null&#9;null&#10;userF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;Web&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/WebDialogActivity.java&#10;MaiNA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/MainActivity.java&#10;LogIn&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;Api&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;IdC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java&#10;AuthList&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java&#10;IdCa&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java&#10;AuthAc&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthActivity.java&#10;AuthAd&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/AuthenticationAdapter.java&#10;aUTHa&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthActivity.java&#10;apI&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;AuthAda&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/AuthenticationAdapter.java&#10;item&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/res/layout/item_auth_list.xml&#10;AuthC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthContract.java&#10;AuthMo&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AuthModel.java&#10;Aut&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthContract.java&#10;title&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/res/layout/include_title_bar.xml&#10;HomeF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;UserMo&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.mvp.contract.UserContract.IUserModel&#10;Resp&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/RespObserver.java&#10;App&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.App&#10;BaseMvpA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseMvpActivity.java&#10;LocationPr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LocationPresenter.java&#10;Location&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LocationModel.java&#10;Loca&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LocationPresenter.java&#10;MainA&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.MainActivity&#10;BaseM&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseMvpActivity.java&#10;MainPr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/MainPresenter.java&#10;homeF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;HomeFr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;LogIna&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;MainM&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.mvp.model.MainModel&#10;StartPre&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.mvp.presenter.StartPresenter&#10;UserAda&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/UserAdapter.java" />
+    <property name="SearchEverywhereHistoryKey" value="AuthLis&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java&#10;UrlC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java&#10;AuthAc&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java&#10;IdCard&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java&#10;Idc&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/IdCardAuthModel.java&#10;AuthA&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.AuthListActivity&#10;BorrowListA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BorrowListActivity.java&#10;BankCardAc&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java&#10;IdCar&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.IdCardAuthActivity&#10;LoginA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;LogiNA&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;UserFr&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;BAN&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java&#10;ApiS&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;UserF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;BaseListA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseListActivity.java&#10;uRLc&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java&#10;uSER&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;UlrC&#9;null&#9;null&#10;userF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java&#10;Web&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/WebDialogActivity.java&#10;MaiNA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/MainActivity.java&#10;LogIn&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java&#10;Api&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;IdC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java&#10;AuthList&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java&#10;IdCa&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java&#10;AuthAd&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/AuthenticationAdapter.java&#10;aUTHa&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthActivity.java&#10;apI&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java&#10;AuthAda&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/AuthenticationAdapter.java&#10;item&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/res/layout/item_auth_list.xml&#10;AuthC&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthContract.java&#10;AuthMo&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AuthModel.java&#10;Aut&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthContract.java&#10;title&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/res/layout/include_title_bar.xml&#10;HomeF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;UserMo&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.mvp.contract.UserContract.IUserModel&#10;Resp&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/http/RespObserver.java&#10;App&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.App&#10;BaseMvpA&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseMvpActivity.java&#10;LocationPr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LocationPresenter.java&#10;Location&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LocationModel.java&#10;Loca&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/LocationPresenter.java&#10;MainA&#9;PSI&#9;JAVA://tech.shuidikeji.shuidijinfu.ui.activity.MainActivity&#10;BaseM&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseMvpActivity.java&#10;MainPr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/MainPresenter.java&#10;homeF&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;HomeFr&#9;FILE&#9;file:///Users/chenguanxi/Develop/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/HomeFragment.java&#10;LogIna&#9;FILE&#9;file://F:/Android/ShuiDiJinFu/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="device.picker.selection" value="e0d09a3b7d83" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.3.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tech.shuidikeji.shuidijinfu.mvp.presenter" />
+      <recent name="tech.shuidikeji.shuidijinfu.mvp.contract" />
+      <recent name="tech.shuidikeji.shuidijinfu.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Android\ShuiDiJinFu\app\src\main\res\mipmap-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
+      <recent name="F:\Android\ShuiDiJinFu\app\src\main\res\mipmap-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/libs" />
       <recent name="$PROJECT_DIR$/app/src/main/assets" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="tech.shuidikeji.shuidijinfu.utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -4448,11 +4528,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2562313" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2167382" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -4460,7 +4540,7 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32891566" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" weight="0.6569709" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" weight="0.6566265" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32898697" />
@@ -4473,7 +4553,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.32901296" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32761088" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -4520,96 +4600,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class</url>
           <line>143</line>
           <properties />
           <option name="timeStamp" value="24" />
@@ -4621,139 +4611,33 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java</url>
+          <line>98</line>
           <properties />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java</url>
+          <line>99</line>
           <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_title_bar.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="113" column="47" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_auth_status_failure.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/BankCardContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BankCardPojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_bank_card.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BankCardModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/DataOptionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BankCardPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bank_card.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="33" />
-          <folding>
-            <element signature="e#232#3644#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/MainPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#4444#4445#0" expanded="true" />
-            <element signature="e#4512#4513#0" expanded="true" />
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#4688#4689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/MainModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -4821,22 +4705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/ImageCodePojo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4876,9 +4748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="746">
           <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
-          <folding>
-            <element signature="e#1988#4074#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4915,17 +4784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -4933,30 +4791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/IdCardAuthModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -4980,16 +4814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -5035,25 +4859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_zq_identity_front.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_zq_identity_back.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_bg_person.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_bg_action.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_zq_identity_front.png" />
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_zq_identity_back.png" />
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_bg_person.png" />
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/177b3d5435ef2c62a0be619f859625ce/res/drawable-hdpi-v4/ic_bg_action.png" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -5061,6 +4870,192 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/WebViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="75" column="66" selection-start-line="75" selection-start-column="66" selection-end-line="75" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2196#2853#0" expanded="true" />
+            <element signature="e#2852#2853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/DetectEngine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/idauthsdk.aar/daef67761bb5f5858e81ad1226996848/jars/classes.jar!/com/zqzn/idauth/sdk/tool/SdkAuthUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/BitmapUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_idcard_auth.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_face_live_tip.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/IdCardAuthModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_face_live_auth.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#422#648#0" />
+            <element signature="e#654#932#0" />
+            <element signature="e#938#1299#0" />
+            <element signature="e#1305#4347#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/IdCardAuthActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding>
+            <element signature="e#4413#4414#0" expanded="true" />
+            <element signature="e#4484#4485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/IBaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/FaceLiveAuthPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#1029#1030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/IdCardAuthPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#commitIdCard#0;class#IdCardPresenter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/FaceLiveAuthContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/FaceLiveAuthModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
         </state>
       </provider>
     </entry>

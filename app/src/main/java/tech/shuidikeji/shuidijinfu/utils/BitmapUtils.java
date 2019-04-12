@@ -48,7 +48,8 @@ public class BitmapUtils {
             }
         }
 
-        return "data:img/png;base64,"+result;
+        return "data:image/jpeg;base64,"+result;
+
     }
 
     /**

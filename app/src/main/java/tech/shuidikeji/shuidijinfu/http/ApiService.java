@@ -91,6 +91,11 @@ public interface ApiService {
     @POST(UrlConstant.VERIFY_ORC_IDCARD)
     Observable<IdCardPojo> uploadIdCard(@Field("idcard_picture_1") String frontImage,@Field("idcard_picture_2") String backImage,@Field("idcard_picture_3") String faceImage);
 
+    @FormUrlEncoded
+    @POST(UrlConstant.VERIFY_ORC_LIVE_CHECK)
+    Observable<Object> uploadFaceImage(@Field("livecheck_picture_1") String faceImage);
+
+    @FormUrlEncoded
     @POST(UrlConstant.VERIFY_ORC_IDCARD_SAVE)
     Observable<Object> commitIdCard(@Field("name") String name,@Field("sex") String sex,@Field("nation") String nation,@Field("birth") String birth,@Field("address") String address,@Field("number") String number);
 

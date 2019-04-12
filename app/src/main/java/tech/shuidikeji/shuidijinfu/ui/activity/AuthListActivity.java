@@ -165,6 +165,9 @@ public class AuthListActivity extends BaseListActivity<AuthPresenter> implements
             case "setIdcard":
                 IdCardAuthActivity.launcher(this);
                 break;
+            case "livebodyCheck":
+                FaceLiveAuthActivity.launcher(this);
+                break;
         }
 
     }

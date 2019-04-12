@@ -20,12 +20,12 @@ import tech.shuidikeji.shuidijinfu.BuildConfig;
 import tech.shuidikeji.shuidijinfu.R;
 import tech.shuidikeji.shuidijinfu.base.BaseMvpActivity;
 import tech.shuidikeji.shuidijinfu.mvp.contract.IdCardAuthContract;
-import tech.shuidikeji.shuidijinfu.mvp.presenter.IdCardPresenter;
+import tech.shuidikeji.shuidijinfu.mvp.presenter.IdCardAuthPresenter;
 import tech.shuidikeji.shuidijinfu.pojo.IdCardPojo;
 import tech.shuidikeji.shuidijinfu.utils.BitmapUtils;
 import tech.shuidikeji.shuidijinfu.utils.ToastUtils;
 
-public class IdCardAuthActivity extends BaseMvpActivity<IdCardPresenter> implements IdResultCallback, IdCardAuthContract.IdCardAuthView, AMapLocationListener {
+public class IdCardAuthActivity extends BaseMvpActivity<IdCardAuthPresenter> implements IdResultCallback, IdCardAuthContract.IdCardAuthView, AMapLocationListener {
 
     @BindView(R.id.btn_auth_id_card)
     LinearLayout mAuthIdCardBtn;
@@ -75,7 +75,7 @@ public class IdCardAuthActivity extends BaseMvpActivity<IdCardPresenter> impleme
         mLocationClient.startLocation();
     }
 
-    @OnClick({R.id.btn_auth_id_card})
+    @OnClick({R.id.btn_auth_id_card,R.id.btn_commit})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.btn_auth_id_card:
@@ -107,8 +107,8 @@ public class IdCardAuthActivity extends BaseMvpActivity<IdCardPresenter> impleme
     }
 
     @Override
-    protected IdCardPresenter getPresenter() {
-        return new IdCardPresenter(this);
+    protected IdCardAuthPresenter getPresenter() {
+        return new IdCardAuthPresenter(this);
     }
 
     @Override
@@ -120,6 +120,8 @@ public class IdCardAuthActivity extends BaseMvpActivity<IdCardPresenter> impleme
         mSexTv.setText(data.getSex());
         mAddressTv.setText(data.getAddress());
         mNumberTv.setText(data.getNumber());
+        mAuthIdCardBtn.setVisibility(View.GONE);
+
     }
 
     @Override

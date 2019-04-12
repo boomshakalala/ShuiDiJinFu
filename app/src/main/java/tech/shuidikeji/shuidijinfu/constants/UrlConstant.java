@@ -51,6 +51,7 @@ public class UrlConstant {
     public static final String VERIFY_CHOICE = "verify/verifychoice";
     //上传身份证图片
     public static final String VERIFY_ORC_IDCARD = "verifyocr/idcard";
+    public static final String VERIFY_ORC_LIVE_CHECK = "verifyocr/livecheck";
     //提交身份认证
     public static final String VERIFY_ORC_IDCARD_SAVE = "verifyocr/idcard_save";
     //借款记录
