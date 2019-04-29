@@ -39,7 +39,7 @@
     <application
         android:name=".App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/slogo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -57,7 +57,8 @@
             android:value="${TONGDUN_PARTNER_CODE}" />
         <!-- 同盾配置结束 -->
         <activity android:name=".ui.activity.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,16 +66,33 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
         <activity android:name=".ui.activity.WebDialogActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/DialogActivityTheme"/>
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".ui.activity.AuthListActivity" />
-        <activity android:name=".ui.activity.IdCardAuthActivity" />
-        <activity android:name=".ui.activity.WebViewActivity" />
-        <activity android:name=".ui.activity.BorrowListActivity" />
-        <activity android:name=".ui.activity.BankCardActivity" />
-        <activity android:name=".ui.activity.FaceLiveAuthActivity" />
+            android:theme="@style/DialogActivityTheme" />
+        <activity android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AuthListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.IdCardAuthActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.BorrowListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.BankCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.FaceLiveAuthActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AddBankCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AddressListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.BasicInfoAuthActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".ui.activity.EmergencyContactAuthActivity" />
+        <activity android:name=".ui.activity.WebAuthActivity" />
     </application>
 </manifest>

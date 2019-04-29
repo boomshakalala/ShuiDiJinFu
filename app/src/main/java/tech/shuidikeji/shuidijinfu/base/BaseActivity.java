@@ -30,6 +30,12 @@ import tech.shuidikeji.shuidijinfu.widget.TitleBar;
 
 public abstract class BaseActivity extends RxAppCompatActivity  {
     protected static final int REQUEST_LOGIN = 102;
+    protected static final int REQUEST_ADDRESS = 103;
+    protected static final int REQUEST_IMMEDIATE_PHONE = 104;
+    protected static final int REQUEST_OTHER_PHONE = 105;
+    protected static final int REQUEST_CODE_SETTING = 106;
+
+
     private ProgressDialog mProgressDialog;
     private OnKeyClickListener mOnKeyClickListener;
     protected ViewGroup mRoot;

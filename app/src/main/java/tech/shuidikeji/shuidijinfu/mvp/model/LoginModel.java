@@ -16,7 +16,7 @@ public class LoginModel extends BaseModel implements LoginContract.ILoginModel {
     public Observable<LoginPojo> login(String phone,String vericode,String uuid, String captcha, String tokenKey, double lng,
                                        double lat, String registerType, String device, String deviceSn,
                                        String marketId, String brand, String ram) {
-        return mService.login(phone,vericode,uuid,captcha,tokenKey,lng,lat,registerType,device,deviceSn,marketId,brand,ram);
+        return mService.login(phone,captcha,tokenKey,lng,lat,registerType,device,deviceSn,marketId,brand,ram);
     }
 
     @Override

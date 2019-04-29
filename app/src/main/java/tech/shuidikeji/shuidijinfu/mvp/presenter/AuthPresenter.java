@@ -1,5 +1,7 @@
 package tech.shuidikeji.shuidijinfu.mvp.presenter;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,10 +11,12 @@ import tech.shuidikeji.shuidijinfu.mvp.contract.AuthListContract;
 import tech.shuidikeji.shuidijinfu.mvp.model.AuthListModel;
 import tech.shuidikeji.shuidijinfu.pojo.AuthListPojo;
 import tech.shuidikeji.shuidijinfu.pojo.AuthSection;
+import tech.shuidikeji.shuidijinfu.pojo.SubmitCheckPojo;
+import tech.shuidikeji.shuidijinfu.pojo.SubmitPojo;
 import tech.shuidikeji.shuidijinfu.utils.CollectionUtils;
 import tech.shuidikeji.shuidijinfu.utils.RxUtils;
 
-public class AuthPresenter extends BasePresenter<AuthListContract.IAuthView, AuthListContract.IAuthModel> {
+public class AuthPresenter extends LocationPresenter<AuthListContract.IAuthView, AuthListContract.IAuthModel> {
     public AuthPresenter(AuthListContract.IAuthView view) {
         super(view, new AuthListModel());
     }
@@ -49,6 +53,51 @@ public class AuthPresenter extends BasePresenter<AuthListContract.IAuthView, Aut
             public void onError(int errCode, String errMsg) {
                 getView().hideLoading();
                 getView().showError(errMsg);
+            }
+        });
+    }
+
+    public void submitCheck(){
+        getView().showProgressDialog();
+        mModel.submitCheck().compose(RxUtils.transform(getView())).subscribe(new RespObserver<SubmitCheckPojo>() {
+            @Override
+            public void onResult(SubmitCheckPojo data) {
+                getView().dismissProgressDialog();
+                getView().showSubmitCheck(data);
+            }
+
+            @Override
+            public void onError(int errCode, String errMsg) {
+                getView().dismissProgressDialog();
+                getView().showError(errMsg);
+            }
+        });
+    }
+
+    public void submitApply(String blackBox){
+        getView().showProgressDialog();
+        mModel.submitApply(blackBox).compose(RxUtils.transform(getView())).subscribe(new RespObserver<SubmitPojo>() {
+            @Override
+            public void onResult(SubmitPojo data) {
+                getView().dismissProgressDialog();
+                getView().showSubmitSuccess(data);
+            }
+
+            @Override
+            public void onError(int errCode, String errMsg) {
+                getView().dismissProgressDialog();
+            }
+
+            @Override
+            public void onErrorData(int errCode, String errMsg, String errorData) {
+                SubmitPojo data = new Gson().fromJson(errorData,SubmitPojo.class);
+                if (errCode == 2001){
+                    getView().showRefuse(data);
+                }else if (errCode == 2002){
+                    getView().showPendingDialog(data);
+                }else {
+                    getView().showError(errMsg);
+                }
             }
         });
     }

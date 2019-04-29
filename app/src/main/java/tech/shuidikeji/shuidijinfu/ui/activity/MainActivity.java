@@ -39,7 +39,6 @@ import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
  */
 public class MainActivity extends BaseMvpActivity<MainPresenter> implements TabBar.OnTabCheckListener, MainContract.IMainView, AMapLocationListener {
 
-    private static final int REQUEST_CODE_SETTING = 103;
 
     @BindColor(R.color.color_main)
     int mFocusColor;

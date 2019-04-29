@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="直系亲属联系人"
+            android:textColor="@color/color_text_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="姓名"
+                        android:textColor="@color/color_text_dark" />
+
+                    <EditText
+                        android:id="@+id/et_immediate_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入联系人姓名"
+                        android:maxLength="10"
+                        android:background="@null"
+                        android:textColorHint="@color/color_text_gray"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_spline" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="与本人关系"
+                        android:textColor="@color/color_text_dark" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_immediate_relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_immediate_relation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:textColorHint="@color/color_text_dark"
+                            android:textColor="@color/color_text_gray" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/go" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_spline" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="电话号码"
+                        android:textColor="@color/color_text_dark" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_immediate_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_immediate_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="请选择"
+                            android:textColorHint="@color/color_text_dark"
+                            android:textColor="@color/color_text_gray" />
+
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/go" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="其他联系人"
+            android:textColor="@color/color_text_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_text_dark" />
+
+                    <EditText
+                        android:id="@+id/et_other_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入联系人姓名"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:textColorHint="@color/color_text_gray"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_spline" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="与本人关系"
+                        android:textColor="@color/color_text_dark" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_other_relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_other_relation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:textColorHint="@color/color_text_dark"
+                            android:textColor="@color/color_text_gray" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/go" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_spline" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="电话号码"
+                        android:textColor="@color/color_text_dark" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_other_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_other_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="请选择"
+                            android:textColorHint="@color/color_text_dark"
+                            android:textColor="@color/color_text_gray" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/go" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*为保证快速获取贷款，请补充常用联系人信息，非紧急情况下不会拨打"
+            android:textColor="#e7c022" />
+
+        <tech.shuidikeji.shuidijinfu.widget.SuperButton
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            app:RoundedConnerRadius="50dp"
+            android:text="确认"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</ScrollView>

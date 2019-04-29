@@ -12,7 +12,7 @@ public class UrlConstant {
     public static final String HELP_ABOUT = H5_HOST + "/help/about";
     //联系我们
     public static final String HELP_CONCAT = H5_HOST + "/help/concat";
-    //
+    //用户协议
     public static final String HELP_USER_PROTOCOL = H5_HOST + "/help/user_protocol";
 
     //获取APP配置信息
@@ -58,6 +58,28 @@ public class UrlConstant {
     public static final String USER_RECORD = "user/record";
     //银行卡
     public static final String USER_BANK_INFO = "user/bank_info";
+    //支持银行列表
+    public static final String VERIFY_BANK_CARD_ALLOW_BANK = "verifybankcard/allow_bank";
+    //卡bin校验
+    public static final String VERIFY_BANK_CARD_CAR_BIN = "verifybankcard/carbin";
+    //添加银行卡获取验证码
+    public static final String VERIFY_BANK_CARD_SET_BANK_CARD = "verifybankcard/setBankcard";
+    //添加银行卡
+    public static final String VERIFY_BANK_CARD_SET_BANK_CARD_CONFIRM = "verifybankcard/setBankcardConfirm";
+    //开户地址列表
+    public static final String VERIFY_BANK_CARD_CITY_LIST = "verifybankcard/fuiou_area";
+    //基本信息项
+    public static final String APPLICATION_JOB = "application/job";
+    //提交用户基本信息
+    public static final String VERIFY_BASIC_INFO = "verify/setbasicinfo";
+    //提交紧急联系人
+    public static final String VERIFY_SET_EMERGENCY_CONTACT = "verify/setemergencycontact";
+    //获取H5认证地址
+    public static final String VERIFY_FORCE_VERIFY_ROUTER = "verify/forceverifyrouter";
+    //提交检测核对
+    public static final String VERIFY_SUBMIT_CHECK = "verify/submit_check";
+    //提交检测
+    public static final String VERIFY_SUBMIT_APPLY = "verify/submit_check";
 
 
 }

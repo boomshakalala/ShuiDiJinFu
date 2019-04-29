@@ -9,16 +9,23 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.List;
 
+import cn.tongdun.android.shell.FMAgent;
 import tech.shuidikeji.shuidijinfu.R;
 import tech.shuidikeji.shuidijinfu.base.BaseListActivity;
 import tech.shuidikeji.shuidijinfu.mvp.contract.AuthListContract;
 import tech.shuidikeji.shuidijinfu.mvp.presenter.AuthPresenter;
 import tech.shuidikeji.shuidijinfu.pojo.AuthListPojo;
 import tech.shuidikeji.shuidijinfu.pojo.AuthSection;
+import tech.shuidikeji.shuidijinfu.pojo.SubmitCheckPojo;
+import tech.shuidikeji.shuidijinfu.pojo.SubmitPojo;
 import tech.shuidikeji.shuidijinfu.ui.adapter.AuthenticationAdapter;
 import tech.shuidikeji.shuidijinfu.utils.CommonUtils;
 import tech.shuidikeji.shuidijinfu.utils.ToastUtils;
@@ -28,7 +35,7 @@ import tech.shuidikeji.shuidijinfu.widget.dialog.AlertDialog;
 /**
  * 认证项目页
  */
-public class AuthListActivity extends BaseListActivity<AuthPresenter> implements AuthListContract.IAuthView, View.OnClickListener, BaseQuickAdapter.OnItemClickListener {
+public class AuthListActivity extends BaseListActivity<AuthPresenter> implements AuthListContract.IAuthView, View.OnClickListener, BaseQuickAdapter.OnItemClickListener, AMapLocationListener {
 
     View mFooterView;
     TextView mAgreementBtn;
@@ -36,6 +43,8 @@ public class AuthListActivity extends BaseListActivity<AuthPresenter> implements
     SuperButton mNextBtn;
     CheckBox mCheckBox;
     private int status;
+    private AMapLocationClient mLocationClient;
+    private double lat,lng;
 
     public static void launcher(Activity context, int status){
         if (!CommonUtils.isLogin()){
@@ -91,6 +100,12 @@ public class AuthListActivity extends BaseListActivity<AuthPresenter> implements
     protected void initData() {
         status = getIntent().getIntExtra("status",10);
         mAdapter = new AuthenticationAdapter();
+        mLocationClient = new AMapLocationClient(getApplicationContext());
+        AMapLocationClientOption option = new AMapLocationClientOption();
+        option.setInterval(30000);
+        mLocationClient.setLocationOption(option);
+        mLocationClient.setLocationListener(this);
+        mLocationClient.startLocation();
     }
 
     @Override
@@ -115,8 +130,67 @@ public class AuthListActivity extends BaseListActivity<AuthPresenter> implements
     }
 
     @Override
-    public void onClick(View v) {
+    public void showSubmitCheck(SubmitCheckPojo data) {
+        if (data.getNext().equals("submit")){
+            mPresenter.submitApply(FMAgent.onEvent(this));
+        }else {
+            // TODO: 申请信息
 
+        }
+    }
+
+    @Override
+    public void showSubmitSuccess(SubmitPojo data) {
+        status = 20;
+        mNextBtn.setText("查看报告");
+        mNextBtn.setCanClick(true);
+        mAgreementLayout.setVisibility(View.GONE);
+        switch (data.getNext()){
+            case "index":
+                break;
+            case "detail":
+                break;
+            case "verify":
+                break;
+            case "product":
+                break;
+        }
+    }
+
+    @Override
+    public void showPendingDialog(SubmitPojo data) {
+
+    }
+
+    @Override
+    public void showRefuse(SubmitPojo data) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_next:
+                List<AuthListPojo> data = mAdapter.getData();
+                for (AuthListPojo datum : data) {
+                    if (datum.getIs_opertional() == 1 && datum.getStatus()!=20){
+                        ToastUtils.showToast(getContext(),"请先完成必选认证项目");
+                        return;
+                    }
+                }
+
+                if (status == 5){
+                    return;
+                }
+
+                if (status == 20 || status == 40){
+                    // TODO: 查看报告
+                    return;
+                }
+                mPresenter.postLocation(lng,lat,"submit_apply","android");
+                mPresenter.submitCheck();
+                break;
+        }
     }
 
     @Override
@@ -168,7 +242,42 @@ public class AuthListActivity extends BaseListActivity<AuthPresenter> implements
             case "livebodyCheck":
                 FaceLiveAuthActivity.launcher(this);
                 break;
+            case "setBank":
+                AddBankCardActivity.launcher(this);
+                break;
+            case "setBasicInfo":
+                BasicInfoAuthActivity.launcher(this);
+                break;
+            case "setEmergencycontact":
+                EmergencyContactAuthActivity.launcher(this);
+                break;
+                default:
+                    WebAuthActivity.launcher(this,item.getName(),item.getCode());
+                    break;
         }
 
+    }
+
+    @Override
+    public void showPostLocationSuccess() {
+
+    }
+
+    @Override
+    public void showPostLocationFailure() {
+
+    }
+
+    @Override
+    public void onLocationChanged(AMapLocation aMapLocation) {
+        lat = aMapLocation.getLatitude();
+        lng = aMapLocation.getLongitude();
+        mLocationClient.stopLocation();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mLocationClient.onDestroy();
     }
 }

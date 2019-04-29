@@ -91,20 +91,24 @@
             android:text="联系客服，更换银行卡"
             app:RoundedConnerRadius="6dp"
             app:strokeColor="#999999"
-            app:pressColor="#666666"
-            app:normalColor="#666666"
-            app:unClickableColor="#666666"
+            app:pressColor="#EEEEEE"
+            app:normalColor="#EEEEEE"
+            app:unClickableColor="#EEEEEE"
             android:textColor="@color/color_text_dark" />
 
 
     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/dnull"
+            android:visibility="visible"/>
+    </FrameLayout>
 
-    <ImageView
-        android:id="@+id/iv_empty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="200dp"
-        android:src="@mipmap/dnull"
-        android:visibility="gone"/>
 </RelativeLayout>

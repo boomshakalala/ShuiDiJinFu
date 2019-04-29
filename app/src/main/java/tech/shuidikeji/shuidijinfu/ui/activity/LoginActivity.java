@@ -98,8 +98,8 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                 isTimerRunning = false;
             }
         };
-        uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
-        mPresenter.getImageCode(uuid);
+//        uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
+//        mPresenter.getImageCode(uuid);
     }
 
     @Override
@@ -118,7 +118,7 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
 
     }
 
-    @OnClick({R.id.btn_code,R.id.btn_login,R.id.btn_agreement})
+    @OnClick({R.id.btn_code,R.id.btn_login,R.id.btn_agreement,R.id.iv_code})
     public void onClick(View v){
         String phone = mPhoneEt.getText().toString();
         String code = mCodeEt.getText().toString();
@@ -139,10 +139,10 @@ public class LoginActivity extends BaseMvpActivity<LoginPresenter> implements Lo
                     mPresenter.login(phone,imageCode,uuid,code,tokenKey,lng,lat,"android","android",deviceSn,marketId,brand,ram);
                 }
                 break;
-            case R.id.iv_code:
-                uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
-                mPresenter.getImageCode(uuid);
-                break;
+//            case R.id.iv_code:
+//                uuid = MD5Utils.MD5(MD5Utils.getRandomString(40)+System.currentTimeMillis());
+//                mPresenter.getImageCode(uuid);
+//                break;
         }
     }
 

@@ -37,6 +37,7 @@ public abstract class RespObserver<T> implements Observer<T> {
                 CommonUtils.clearLoginInfo();
             }
             onError(((ResultException) e).getCode(),e.getMessage());
+            onErrorData(((ResultException) e).getCode(),e.getMessage(),((ResultException) e).getErrorData());
         } else if (e instanceof Exception) {
             HttpThrowable httpThrowable = ThrowableHandler.handleThrowable(e);
             onError(httpThrowable.errorType,httpThrowable.message);
@@ -53,4 +54,8 @@ public abstract class RespObserver<T> implements Observer<T> {
 
     public abstract void onResult(T data);
     public abstract void onError(int errCode, String errMsg);
+
+    public void onErrorData(int errCode,String errMsg,String errorData){
+
+    }
 }

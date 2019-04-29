@@ -3,6 +3,7 @@ package tech.shuidikeji.shuidijinfu.utils;
 import android.Manifest;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -230,6 +231,41 @@ public class PhoneUtils {
         }
         cur.close();
         return result;
+    }
+
+    public static String getPhoneNumber(Uri uri){
+        Cursor cursor = AppUtils.getAppContext().getContentResolver().query(uri, null, null, null, null);
+        if (cursor == null || cursor.getCount() == 0) {
+            return "";
+        }
+        cursor.moveToFirst();
+        int phoneColumn = cursor
+                .getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER);
+        int phoneNum = cursor.getInt(phoneColumn);
+        String result = "";
+        if (phoneNum > 0) {
+            // 获得联系人的ID号
+            int idColumn = cursor.getColumnIndex(ContactsContract.Contacts._ID);
+            String contactId = cursor.getString(idColumn);
+            // 获得联系人电话的cursor
+            Cursor phone = AppUtils.getAppContext().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "="
+                            + contactId, null, null);
+            if (phone.moveToFirst()) {
+                for (; !phone.isAfterLast(); phone.moveToNext()) {
+                    int index = phone
+                            .getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+                    String phoneNumber = phone.getString(index);
+                    result = phoneNumber;
+                }
+                if (!phone.isClosed()) {
+                    phone.close();
+                }
+            }
+        }
+        cursor.close();
+        return result;
+
     }
 
 

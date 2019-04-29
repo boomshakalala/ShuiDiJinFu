@@ -34,6 +34,12 @@ public class FaceLiveAuthActivity extends BaseMvpActivity<FaceLiveAuthPresenter>
     }
 
     @Override
+    protected void initTitle() {
+        super.initTitle();
+        getTitleBar().setTitle("活体检测").showBack().show();
+    }
+
+    @Override
     protected void initView() {
         setContentView(R.layout.activity_face_live_auth);
     }
@@ -70,8 +76,12 @@ public class FaceLiveAuthActivity extends BaseMvpActivity<FaceLiveAuthPresenter>
 
     @Override
     public void notifyResult(FaceResult faceResult) {
-        String faceImage = BitmapUtils.BitmapToBase64(faceResult.face_image);
-        mPresenter.uploadFaceImage(faceImage);
+        if (faceResult.result_code == ErrorCode.SUCCESS.getCode()){
+            String faceImage = BitmapUtils.BitmapToBase64(faceResult.face_image);
+            mPresenter.uploadFaceImage(faceImage);
+        }else {
+            ToastUtils.showToast(this, String.format("OCR扫描失败:%s", faceResult.result_code));
+        }
     }
 
     @Override

@@ -165,7 +165,7 @@ public class UserFragment extends BaseMvpFragment<UserPresenter> implements View
                 BorrowListActivity.launcher(getActivity());
                 break;
             case "bank":
-                // TODO: 我的银行卡
+                // 我的银行卡
                 BankCardActivity.launcher(getActivity());
                 break;
             case "help":

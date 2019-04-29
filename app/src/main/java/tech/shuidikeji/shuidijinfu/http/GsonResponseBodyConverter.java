@@ -23,8 +23,7 @@ final class GsonResponseBodyConverter<T> implements Converter<ResponseBody, T> {
         if (result.getCode() == 200 ){
           return gson.fromJson(gson.toJson(result.getData()),type);
         }else {
-            throw new ResultException(result.getCode(),result.getMessage());
-
+            throw new ResultException(result.getCode(),result.getMessage(),gson.toJson(result.getData()));
         }
     }
 }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -29,8 +30,8 @@ public class BankCardActivity  extends BaseMvpActivity<BankCardPresenter> implem
     TextView mBankNameTv;
     @BindView(R.id.iv_bank_card)
     ImageView mBankCardIv;
-    @BindView(R.id.iv_empty)
-    ImageView mEmptyIv;
+    @BindView(R.id.fl_empty)
+    FrameLayout mEmptyView;
 
     public static void launcher(Activity context){
         if (!CommonUtils.isLogin()){
@@ -68,13 +69,13 @@ public class BankCardActivity  extends BaseMvpActivity<BankCardPresenter> implem
     public void showBankCard(BankCardPojo data) {
         if (TextUtils.isEmpty(data.getBankcard_number()) || TextUtils.isEmpty(data.getBankcard_bank()) || TextUtils.isEmpty(data.getBankcard_img())){
             mBankCardLayout.setVisibility(View.GONE);
-            mEmptyIv.setVisibility(View.VISIBLE);
+            mEmptyView.setVisibility(View.VISIBLE);
         }else {
             mBankNameTv.setText(data.getBankcard_bank());
             ImageManager.getInstance().loadNet(data.getBankcard_img(),mBankCardIv);
             mBankCardNumTv.setText(DataOptionUtils.getHideCenterString(data.getBankcard_number()));
             mBankCardLayout.setVisibility(View.VISIBLE);
-            mEmptyIv.setVisibility(View.GONE);
+            mEmptyView.setVisibility(View.GONE);
         }
 
     }

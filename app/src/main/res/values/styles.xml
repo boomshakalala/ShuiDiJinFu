@@ -17,7 +17,7 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <style name="DialogTheme">
+    <style name="DialogTheme" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -25,6 +25,17 @@
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BottomDialog" parent="DialogTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+         <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+         <item name="android:windowExitAnimation">@anim/bottom_out</item>
     </style>
 
     <style name="ProgressDialogTheme" parent="DialogTheme">
