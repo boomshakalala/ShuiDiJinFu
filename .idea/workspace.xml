@@ -23,101 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad2c5272-b68d-49e5-a74e-024ad88ba193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_Android_PickerView_4_1_7_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_wheelview_4_0_9_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_just_agentweb_agentweb_4_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_just_agentweb_download_4_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_just_agentweb_filechooser_4_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/province.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AddBankCardContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AddressListContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/BasicInfoAuthContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/EmergencyContactAuthContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/WebAuthContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AddBankCardModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AddressListModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/BasicInfoAuthModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/EmergencyContactAuthModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/WebAuthModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AddBankCardPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AddressListPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/BasicInfoAuthPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/EmergencyContactAuthPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/WebAuthPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BankCodePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BankListPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BankNamePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/BasicInfoConfigPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/CityListPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/ProvincePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/SubmitCheckPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/SubmitPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/pojo/WebAuthPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AddBankCardActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AddressListActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BasicInfoAuthActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/EmergencyContactAuthActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/WebAuthActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/CityListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/adapter/ProvinceListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/KeyboardUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/widget/dialog/DialogOnItemClickListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/widget/dialog/SelectDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/bottom_in.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/bottom_out.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_widget_actiondialog_bottom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_widget_actiondialog_middle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_widget_actiondialog_single.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selector_widget_actiondialog_top.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_bank_card.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_address_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_basic_info_auth.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_emergency_contact_auth.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_web_auth.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_address.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_bank.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/widget_select_dialog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/yhk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/slogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/base/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/constants/UrlConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/GsonResponseBodyConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/GsonResponseBodyConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/RespObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/RespObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ResultException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ResultException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthListContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthListContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AuthListModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/AuthListModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/model/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/BankCardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/FaceLiveAuthActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/fragment/UserFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/JavaScriptinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/JavaScriptinterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/PhoneUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/PhoneUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/SystemUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/SystemUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_bank_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_bank_card.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_live_auth.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_face_live_auth.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_empty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_empty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/bg_start.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/bg_start.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/q1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/q1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beecloud/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/beecloud/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +92,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
-          <entry key="gradle" value="9" />
+          <entry key="gradle" value="11" />
           <entry key="java" value="375" />
           <entry key="jpg" value="6" />
           <entry key="json" value="1" />
@@ -198,7 +104,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="Groovy" value="9" />
+          <entry key="Groovy" value="11" />
           <entry key="Image" value="55" />
           <entry key="JAVA" value="375" />
           <entry key="JSON" value="1" />
@@ -208,7 +114,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="3" />
@@ -220,7 +126,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="53" />
-          <entry key="gradle" value="53" />
+          <entry key="gradle" value="55" />
           <entry key="java" value="26962" />
           <entry key="json" value="1" />
           <entry key="xml" value="3266" />
@@ -228,7 +134,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="53" />
+          <entry key="Groovy" value="55" />
           <entry key="JAVA" value="26962" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="53" />
@@ -242,7 +148,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
@@ -255,10 +161,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/GsonConverterFactory.java">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beecloud/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="615">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -268,20 +179,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
               <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/http/ResultException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-              <folding>
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -4273,7 +4170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AddressListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_address_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_basic_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/utils/ScreenUtils.java" />
@@ -4324,6 +4220,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/contract/AuthListContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/mvp/presenter/AuthPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tech/shuidikeji/shuidijinfu/ui/activity/AuthListActivity.java" />
+        <option value="$PROJECT_DIR$/beecloud/build.gradle" />
       </list>
     </option>
   </component>
@@ -4369,6 +4266,14 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="shuidijinfu" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="beecloud" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="ShuiDiJinFu" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -4672,12 +4577,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/guarantee.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/h_top1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/h_top2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -4962,6 +4861,16 @@
           <folding>
             <element signature="method#onItemClick#0;class#AuthListActivity#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beecloud/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
